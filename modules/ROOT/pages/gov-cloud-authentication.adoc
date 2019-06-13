@@ -1,0 +1,23 @@
+= Connect authentication to Government Cloud
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+
+. Open :
++
+----
+??.anypoint.mulesoft.com
+----
+
+. If you don't have an Anypoint Platform account in Government Cloud, click *Sign Up*.
+.. Enter your personal information. All fields are required.
+.. Choose a username.
+.. Choose a password, then click *Create Account*.
+
+. Enter your username and password, then click *Sign In*.
+
+
+== See Also
+
+* xref:release-notes::gov-cloud/gov-cloud-release-note.adoc[Government Cloud, Summer 2019 Release Notes]

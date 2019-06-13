@@ -1,0 +1,14 @@
+= About Government Cloud
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+MuleSoft Government Cloud is cloud-deployment environment for Anypoint Platform. Government Cloud,
+Government Cloud meets all FedRAMP security and compliance standards. It is intended specifically for use by U.S. federal, state, and local government customers, U.S. government contractors, and Federally Funded Research and Development Centers (FFRDCs).
+
+
+== See Also
+
+* xref:release-notes::gov-cloud/gov-cloud-release-notes.adoc[Government Cloud, Summer 2019 Release Notes]
+* xref:gov-cloud-authentication.adoc[Connect authentication to Government Cloud]
+* xref:gov-cloud-features.adoc[Government Cloud Features]

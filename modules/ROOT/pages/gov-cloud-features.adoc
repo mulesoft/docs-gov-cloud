@@ -1,0 +1,145 @@
+= Government Cloud Features
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+This release of Government Cloud includes a subset of Anypoint Platform features.
+[cols="2,1,1,2", options="header"]
+.Features available in Government Cloud
+|===
+|Anypoint Platform Feature
+|Available in Government Cloud?
+|Exceptions
+|Questions
+
+|*Access Management*
+|✓
+|
+|Core Services?
+
+|*Anypoint Security*
+|✓
+|*CSM*, *Runtime Plane*
+|What is CSM? Are Tokenization and Edge included?
+
+|*API Functional Monitoring*
+|
+|
+|Is this included?
+
+|*API Manager*
+|✓
+|*API Analytics*
+|Does this include VCS? Mocking Service?
+
+
+|*Application Manager*
+|NO
+|
+|What is this?
+
+|*Application Network Visualizer*
+|NO
+|
+|Is this Anypoint Visualizer?
+
+|*APIkit*
+|
+|
+|Included?
+
+|*Connector DevKit*
+|
+|
+|Included?
+
+|*Connectors*
+|✓
+|
+|
+
+|*Data Gateway*
+|
+|
+|Included?
+
+|*Design Center - API Designer*
+|
+|*Flow Designer*
+|
+
+|*EU Control Plane*
+|
+|
+|Don't even mention since not applicable to US gov?
+
+|*Exchange*
+|✓
+|
+|Is REST Connect part of Exchange? Is Asset Manager part of Exchange?
+
+|*Healthcare Toolkit*
+|
+|
+|Don't even mention?
+
+|*Management Center* - AMC (Anypoint Management Center?)
+|NO
+|
+|Is this the same as Anypoint Platform UI? CloudHub?
+
+|*Monitoring*
+|NO
+|
+|same as Anypoint Monitoring Center?
+
+|*MQ*
+|NO
+|
+|same as Message Queue?
+
+|*Mule Runtime*
+|
+|
+|Included? Is Maven Facade part of this?
+
+|*Mule SDK*
+|
+|
+|Included?
+
+|*MUnit*
+|
+|
+|Included?
+
+|*Object Store*
+|✓
+|
+|
+
+|*Runtime Fabric*
+|NO
+|
+|
+
+|*Runtime Manager - CloudHub*
+|✓
+|
+| Is this the same as Anypoint Platform UI?
+
+|*Studio*
+|
+|
+|
+
+|*Tcat Server*
+|
+|
+|
+
+|===
+
+
+== See Also
+* xref:release-notes::gov-cloud/gov-cloud-release-notes.adoc[Government Cloud, Summer 2019 Release Notes]

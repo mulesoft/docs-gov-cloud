@@ -1,0 +1,4 @@
+.xref:index.adoc[About Government Cloud]
+* xref:index.adoc[About Government Cloud]
+* xref:gov-cloud-authentication.adoc[Connect authentication to Government Cloud]
+* xref:gov-cloud-features.adoc[Government Cloud Features]
