@@ -20,4 +20,4 @@ endif::[]
 
 == See Also
 
-* xref:release-notes::gov-cloud/gov-cloud-release-note.adoc[Government Cloud, Summer 2019 Release Notes]
+* xref:release-notes::gov-cloud/gov-cloud-release-notes.adoc[Government Cloud, Summer 2019 Release Notes]
