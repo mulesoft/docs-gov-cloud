@@ -1,145 +1,47 @@
-= Government Cloud Features
+= Features Included in Government Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This release of Government Cloud includes a subset of Anypoint Platform features.
-[cols="2,1,1,2", options="header"]
+This release of Government Cloud includes the full functionality of the Runtime Plane (services and Mule engine) features and a subset of Control Plan (browser management) Anypoint Platform features.
+
+[NOTE]
+You must configure Mule Runtime to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
+
+[cols="2,2,2", options="header"]
 .Features available in Government Cloud
 |===
-|Anypoint Platform Feature
-|Available in Government Cloud?
-|Exceptions
-|Questions
+|Anypoint Platform Feature|Available in this Release|Available in a Future Release
+|xref:access-management::index.adoc[*Access Management*]|✓|
 
-|*Access Management*
-|✓
-|
-|Core Services?
+|xref:studio::index.adoc[*Anypoint Studio*]|✓|
+|xref:api-manager::latest-overview-concept.adoc[*API Manager*]|✓|API Analytics
+|xref:data-gateway::index.adoc[*Data Gateway*]||
+|*Design Center*: xref:design-center::design-create-publish-api-specs.adoc[*API Designer*]|✓
+a|
 
-|*Anypoint Security*
-|✓
-|*CSM*, *Runtime Plane*
-|What is CSM? Are Tokenization and Edge included?
+* Flow Designer
+* Visual API editor
 
-|*API Functional Monitoring*
-|
-|
-|Is this included?
+|xref:exchange::index.adoc[*Exchange*]|✓|
+|xref:monitoring::index.adoc[*Monitoring*]||
+|xref:mq::index.adoc[*MQ*]||
+|*Runtime Manager*: xref:runtime-manager::cloudhub.adoc[*CloudHub*]|✓|Runtime Fabric
+|xref:anypoint-security::index-secrets-manager.adoc[*Secrets Manager*]||
+|xref:anypoint-security::index.adoc[*Security*]|✓
+a|
 
-|*API Manager*
-|✓
-|*API Analytics*
-|Does this include VCS? Mocking Service?
+* Tokenization
+* Edge Policies
 
-
-|*Application Manager*
-|NO
-|
-|What is this?
-
-|*Application Network Visualizer*
-|NO
-|
-|Is this Anypoint Visualizer?
-
-|*APIkit*
-|
-|
-|Included?
-
-|*Connector DevKit*
-|
-|
-|Included?
-
-|*Connectors*
-|✓
-|
-|
-
-|*Data Gateway*
-|
-|
-|Included?
-
-|*Design Center - API Designer*
-|
-|*Flow Designer*
-|
-
-|*EU Control Plane*
-|
-|
-|Don't even mention since not applicable to US gov?
-
-|*Exchange*
-|✓
-|
-|Is REST Connect part of Exchange? Is Asset Manager part of Exchange?
-
-|*Healthcare Toolkit*
-|
-|
-|Don't even mention?
-
-|*Management Center* - AMC (Anypoint Management Center?)
-|NO
-|
-|Is this the same as Anypoint Platform UI? CloudHub?
-
-|*Monitoring*
-|NO
-|
-|same as Anypoint Monitoring Center?
-
-|*MQ*
-|NO
-|
-|same as Message Queue?
-
-|*Mule Runtime*
-|
-|
-|Included? Is Maven Facade part of this?
-
-|*Mule SDK*
-|
-|
-|Included?
-
-|*MUnit*
-|
-|
-|Included?
-
-|*Object Store*
-|✓
-|
-|
-
-|*Runtime Fabric*
-|NO
-|
-|
-
-|*Runtime Manager - CloudHub*
-|✓
-|
-| Is this the same as Anypoint Platform UI?
-
-|*Studio*
-|
-|
-|
-
-|*Tcat Server*
-|
-|
-|
-
+[NOTE]
+For information about Government Cloud security features, see xref:gov-cloud-security.adoc[Security in Government Cloud].
+|xref:visualizer::index.adoc[*Visualizer*]||
 |===
 
 
 == See Also
+
+* xref:gov-cloud::gov-cloud-security.adoc[Security in Government Cloud]
+* xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support]
 * xref:release-notes::gov-cloud/gov-cloud-release-notes.adoc[Government Cloud, Summer 2019 Release Notes]
