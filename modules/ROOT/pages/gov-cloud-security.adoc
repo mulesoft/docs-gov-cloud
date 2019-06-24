@@ -24,7 +24,6 @@ In addition to FedRAMP compliance, Government Cloud adheres to these security pr
 * *Transport Layer Security* (TLS) 1.2 encryption — Implements encryption for all external and internal data transmission to block “man in the middle” attacks.
 * *NIST 800-53* — Enhances physical and logical security.
 * *CIS benchmarks* — Hardens instances to address Center for Internet Security checklists.
-* *STIG standards* — Adheres to security protocol standards in the Security Technical Implementation Guide (STIG).
 
 == Secure Hosting Platform
 
