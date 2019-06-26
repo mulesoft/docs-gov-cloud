@@ -3,49 +3,66 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Government Cloud meets the security requirements required by FedRAMP (Federal Risk and Authorization Management Program) and other security protocols.
+Government Cloud meets the security requirements of FedRAMP (Federal Risk and Authorization Management Program) and other security protocols.
 
-[NOTE]
 Some xref:anypoint-security::index.adoc[Anypoint Security] features are not available in this release of Government Cloud.
 
 == FedRAMP Compliance
 
-Government Cloud meets all FedRAMP security and compliance standards. FedRAMP provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services used by the US government.
+Government Cloud meets all FedRAMP security and compliance standards. FedRAMP provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services used by the U.S. government.
 
-A Third-Party Assessment Organization (3PAO) performs the security assessments following guidance in the National Institute of Standards and Technology (NIST) 800-37 publication. The security assessment validates management, operational, and technical security controls used to protect the confidentiality, integrity, and availability of the MuleSoft service and the data it stores, transmits, and processes.
+A Third-Party Assessment Organization (3PAO) performs the security assessments following guidance in the National Institute of Standards and Technology (NIST) 800-37 publication. The security assessment validates management, operational, and technical security controls used to protect the confidentiality, integrity, and availability of Government Cloud and the data it stores, transmits, and processes.
 
 MuleSoft obtained the FedRAMP Agency Authority to Operate (ATO) at the *Moderate Impact Risk* level.
 
-== Security protocols
+== Security Protocols
 
 In addition to FedRAMP compliance, Government Cloud adheres to these security protocols:
 
-* *Federal Information Processing Standards* (FIPS 140-2) — Complies with hardware and software encryption standards for all data at rest (stored data).
-* *Transport Layer Security* (TLS) 1.2 encryption — Implements encryption for all external and internal data transmission to block “man in the middle” attacks.
-* *NIST 800-53* — Enhances physical and logical security.
-* *CIS benchmarks* — Hardens instances to address Center for Internet Security checklists.
+* *Federal Information Processing Standards* (FIPS 140-2)
++
+Complies with hardware and software encryption standards for all data at rest (stored data).
++
+You must configure Mule runtime engine to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
+
+
+* *Transport Layer Security (TLS) 1.2 encryption*
++
+Implements encryption for all external and internal data transmission to block “man in the middle” attacks.
+
+* *NIST 800-53*
++
+Enhances physical and logical security.
+
+* *CIS benchmarks*
++
+Hardens instances to address the Center for Internet Security checklists.
 
 == Secure Hosting Platform
 
-Government Cloud is hosted in Amazon Web Services (AWS) High Authorized GovCloud. AWS GovCloud is a FedRAMP High Authorized, ITAR-compliant environment with provisional DoD IL2, IL4, and IL5 authorization.
+Government Cloud is hosted in Amazon Web Services (AWS) High Authorized GovCloud.
+
+AWS GovCloud provides:
+
+* ITAR (International Traffic in Arms Regulations) compliance
+* Department of Defense (DoD) Provisional Authorization at IL (Impact Level) 2, 4, and 5
 
 == Cloud Security and Data
 
 Government Cloud provides a highly secure environment for government entities to perform sensitive data manipulations.
 
-MuleSoft transmits but does not inspect, permanently store, or otherwise interact directly with government data. Government agencies always maintain control over their data, configuration, and workers.
+Mule runtime engine transmits but does not inspect, permanently store, or otherwise interact directly with government data. Government agencies always maintain control over their data, configuration, and workers.
 
-== Support
+== Support and Maintenance
 
-MuleSoft supports Government Cloud with dedicated support personnel in the United States. MuleSoft provides continuous monitoring services to protect confidentiality, integrity, and availability of government data managed in Anypoint Platform.
+MuleSoft supports Government Cloud with dedicated support personnel located in the United States. MuleSoft provides continuous monitoring services to protect confidentiality, integrity, and availability of government data managed in Government Cloud.
 
-The MuleSoft security team:
+The MuleSoft Compliance and Information Security teams:
 
-* Follows industry best practices.
-* Runs internal security audits.
-* Maintains security policies, which cover operations, data security, passwords and credentials, facilities and network security, and secure connectivity.
-+
-MuleSoft performs regular audits to ensure compliance with our security policies.
+* Work directly with FedRAMP agencies to address all vulnerabilities as required by FedRAMP ATO standards.
+* Follow industry best practices for security, including password enforcement, multi-factor authentication (MFA), and user education.
+* Maintain security policies related to operations, data security, passwords and credentials, facilities and network security, and secure connectivity.
+* Perform internal security audits to ensure compliance with security policies.
 
 == See Also
 

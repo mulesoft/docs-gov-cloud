@@ -3,40 +3,32 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-This release of Government Cloud includes the full functionality of the Runtime Plane (services and Mule engine) features and a subset of Control Plan (browser management) Anypoint Platform features.
+Government Cloud includes the full functionality of the runtime plane (services and Mule runtime engine) and a subset of the control plane (browser management) Anypoint Platform features.
 
-[NOTE]
-You must configure Mule Runtime to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
+You must configure Mule to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
 
-[cols="2,2,2", options="header"]
-.Features available in Government Cloud
+[cols="2,2", options="header"]
+.Anypoint Platform Features in Government Cloud
 |===
-|Anypoint Platform Feature|Available in this Release|Available in a Future Release
-|xref:access-management::index.adoc[*Access Management*]|✓|
-
-|xref:studio::index.adoc[*Anypoint Studio*]|✓|
-|xref:api-manager::latest-overview-concept.adoc[*API Manager*]|✓|API Analytics
-|xref:data-gateway::index.adoc[*Data Gateway*]||
-|*Design Center*: xref:design-center::design-create-publish-api-specs.adoc[*API Designer*]|✓
-a|
-
-* Flow Designer
-* Visual API editor
-
-|xref:exchange::index.adoc[*Exchange*]|✓|
-|xref:monitoring::index.adoc[*Monitoring*]||
-|xref:mq::index.adoc[*MQ*]||
-|*Runtime Manager*: xref:runtime-manager::cloudhub.adoc[*CloudHub*]|✓|Runtime Fabric
-|xref:anypoint-security::index-secrets-manager.adoc[*Secrets Manager*]||
-|xref:anypoint-security::index.adoc[*Security*]|✓
+|Supported Features|Features Not Yet Supported
+|xref:access-management::index.adoc[*Access management*]|
+| |Anypoint Monitoring
+| |Anypoint MQ
+|xref:anypoint-security::index.adoc[*Anypoint Security*]
 a|
 
 * Tokenization
 * Edge Policies
 
-[NOTE]
-For information about Government Cloud security features, see xref:gov-cloud-security.adoc[Security in Government Cloud].
-|xref:visualizer::index.adoc[*Visualizer*]||
+See xref:gov-cloud-security.adoc[Security in Government Cloud].
+|xref:studio::index.adoc[*Anypoint Studio*]|
+| |Anypoint Visualizer
+|xref:api-manager::latest-overview-concept.adoc[*API Manager*]|Anypoint Analytics
+| |Data Gateway
+|*Design Center*: xref:design-center::design-create-publish-api-specs.adoc[*visual API designer*]|Flow designer
+|xref:exchange::index.adoc[*Exchange*]|
+|*Runtime Manager*: xref:runtime-manager::cloudhub.adoc[*CloudHub*]|Runtime Fabric
+| |Secrets manager
 |===
 
 

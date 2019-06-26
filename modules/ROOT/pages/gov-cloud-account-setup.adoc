@@ -3,26 +3,24 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Government Cloud works with your identity provider (IdP) to enable single sign-on (SSO) for users in your agency. So, instead of using the Anypoint Platform sign-in page, Government Cloud users sign in to the SSO system to access Anypoint Platform.
+Once configured, Government Cloud works with your identity provider (IdP) to enable single sign-on (SSO) for users in your agency. Instead of using the Anypoint Platform sign-in page, your users sign in to the SSO system to access Anypoint Platform.
 
 To configure your IdP to work with Government Cloud:
 
-. Visit the https://support.mulesoft.com/s/[MulesSoft Support Portal].
-. Click *Create New Case*.
-. Enter your Support Center credentials and click *Log in*.
+. Verify that you have access to the https://support.mulesoft.com/s/[MulesSoft Support Portal].
 +
-If you don't have access to the Support Portal, contact your Customer Success Manager for credentials.
-. In your support case:
-[loweralpha]
-.. Request to configure an external identity provider for your organization to enable SSO.
-.. Provide the required information about your IdP and any additional information, if applicable.
+If not, contact your Customer Success Manager for credentials.
+. In the Support Portal, click *Create New Case*.
+. Enter your Support Center credentials and click *Log in*.
+. Request to configure an external identity provider for your organization to enable SSO.
+. Provide the required information about your IdP and any additional information, if applicable.
 +
 For the required information, see the documentation that applies to the SSO standard you use:
 
 ** xref:access-management::conf-openid-connect-task.adoc[OpenID Connect]
 ** xref:access-management::managing-users.adoc[SAML]
 
-MuleSoft configures the IdP using the information you provide to enable SSO for your organization.
+Using the information you provide, MuleSoft Support configures the IdP to enable SSO for your organization.
 
 == See Also
 
