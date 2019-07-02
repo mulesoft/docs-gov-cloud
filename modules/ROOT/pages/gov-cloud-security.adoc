@@ -5,8 +5,6 @@ endif::[]
 
 Government Cloud meets the security requirements of FedRAMP (Federal Risk and Authorization Management Program) and other security protocols.
 
-Some xref:anypoint-security::index.adoc[Anypoint Security] features are not available in this release of Government Cloud.
-
 == FedRAMP Compliance
 
 Government Cloud meets all FedRAMP security and compliance standards. FedRAMP provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services used by the U.S. government.

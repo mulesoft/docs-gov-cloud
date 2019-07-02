@@ -7,30 +7,35 @@ Government Cloud includes the full functionality of the runtime plane (services 
 
 You must configure Mule to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
 
-[cols="2,2", options="header"]
-.Anypoint Platform Features in Government Cloud
+[cols="1,2,2",grid="none",options="header"]
+.Features in Government Cloud
 |===
-|Supported Features|Features Not Yet Supported
-|xref:access-management::index.adoc[*Access management*]|
-| |Anypoint Monitoring
-| |Anypoint MQ
-|xref:anypoint-security::index.adoc[*Anypoint Security*]
-a|
-
-* Tokenization
-* Edge Policies
-
-See xref:gov-cloud-security.adoc[Security in Government Cloud].
-|xref:studio::index.adoc[*Anypoint Studio*]|
-| |Anypoint Visualizer
-|xref:api-manager::latest-overview-concept.adoc[*API Manager*]|Anypoint Analytics
-| |Data Gateway
-|*Design Center*: xref:design-center::design-create-publish-api-specs.adoc[*visual API designer*]|Flow designer
-|xref:exchange::index.adoc[*Exchange*]|
-|*Runtime Manager*: xref:runtime-manager::cloudhub.adoc[*CloudHub*]|Runtime Fabric
-| |Secrets manager
+||Included|Excluded
+3+^h|*Design Center*
+||Visual API designer|Flow designer
+3+^h|*Exchange*
+||All|None
+3+^h|*Anypoint Studio*
+||All|None
+3+^h|*Management Center*
+.9+||Access management|Anypoint Monitoring
+|Anypoint Security|Edge policies
+||Tokenization
+|API Manager|Anypoint Analytics
+|Runtime Manager: CloudHub|Runtime Fabric
+||Anypoint MQ
+||Anypoint Visualizer
+||Data Gateway
+||Secrets manager
 |===
 
+// |xref:design-center::design-create-publish-api-specs.adoc[*Visual API designer*]|Flow designer
+// 2+^h|xref:exchange::index.adoc[*Exchange*]
+// 2+^h|xref:studio::index.adoc[*Anypoint Studio*]
+// |xref:access-management::index.adoc[*Access management*]|Anypoint Monitoring
+// .2+|xref:anypoint-security::index.adoc[*Anypoint Security*]|Tokenization
+// |xref:api-manager::latest-overview-concept.adoc[*API Manager*]|Anypoint Analytics
+// |Runtime Manager: xref:runtime-manager::cloudhub.adoc[*CloudHub*]|Runtime Fabric
 
 == See Also
 
