@@ -23,7 +23,3 @@ For the required information, see the documentation that applies to the SSO stan
 ** xref:access-management::managing-users.adoc[SAML]
 
 Using the information you provide, MuleSoft Support configures the IdP to enable SSO for your organization.
-
-== See Also
-
-* xref:release-notes::gov-cloud/gov-cloud-release-notes.adoc[Government Cloud, Summer 2019 Release Notes]
