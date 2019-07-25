@@ -41,4 +41,3 @@ Although it is not part of Government Cloud, you can use Anypoint Studio offline
 
 * xref:gov-cloud::gov-cloud-security.adoc[Security in Government Cloud]
 * xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support]
-* xref:release-notes::gov-cloud/gov-cloud-release-notes.adoc[Government Cloud, Summer 2019 Release Notes]
