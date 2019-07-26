@@ -7,9 +7,19 @@ Government Cloud meets the security requirements of FedRAMP (Federal Risk and Au
 
 == FedRAMP Compliance
 
-Government Cloud meets all FedRAMP security and compliance standards. FedRAMP provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services used by the U.S. government.
+Government Cloud meets all FedRAMP security and compliance standards. FedRAMP provides a standardized approach 
+to security assessment, authorization, and continuous monitoring for cloud products and services used by the 
+U.S. government.
 
-A Third-Party Assessment Organization (3PAO) performs the security assessments following guidance in the National Institute of Standards and Technology (NIST) 800-37 publication. The security assessment validates management, operational, and technical security controls used to protect the confidentiality, integrity, and availability of Government Cloud and the data it stores, transmits, and processes.
+Connector compliance:
+
+* Runtime connectors are FIPS 140 compliant.
+* Cloud connectors are not yet compliant.
+
+A Third-Party Assessment Organization (3PAO) performs the security assessments following guidance in the 
+National Institute of Standards and Technology (NIST) 800-37 publication. The security assessment validates 
+management, operational, and technical security controls used to protect the confidentiality, integrity, and 
+availability of Government Cloud and the data it stores, transmits, and processes.
 
 MuleSoft obtained the FedRAMP Agency Authority to Operate (ATO) at the *Moderate Impact Risk* level.
 
