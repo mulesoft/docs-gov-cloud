@@ -5,7 +5,7 @@ endif::[]
 
 Government Cloud includes the full functionality of the runtime plane (services and Mule runtime engine) and a subset of the control plane (browser management) Anypoint Platform features.
 
-You must configure Mule to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
+You must configure Mule to run in FIPS-compliant mode. See xref:mule-runtime/::/fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
 
 Although it is not part of Government Cloud, you can use Anypoint Studio offline to build applications to deploy in Government Cloud. See xref:studio/::/set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials].
 
@@ -40,4 +40,4 @@ Although it is not part of Government Cloud, you can use Anypoint Studio offline
 == See Also
 
 * xref:gov-cloud::gov-cloud-security.adoc[Security in Government Cloud]
-* xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support]
+* xref:mule-runtime/::/fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support]
