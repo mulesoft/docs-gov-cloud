@@ -12,5 +12,5 @@ With MuleSoft managing the Anypoint Platform infrastructure, your IT teams can f
 == See Also
 
 * xref:gov-cloud::gov-cloud-features.adoc[Features Included in Government Cloud]
-* xref:release-notes::gov-cloud/gov-cloud-release-notes.adoc[Government Cloud, Summer 2019 Release Notes]
+* xref:release-notes/::/gov-cloud/gov-cloud-release-notes.adoc[Government Cloud, Summer 2019 Release Notes]
 * https://marketplace.fedramp.gov/#/product/mulesoft-government-cloud?sort=productName[MuleSoft Government Cloud FedRAMP Authorization]
