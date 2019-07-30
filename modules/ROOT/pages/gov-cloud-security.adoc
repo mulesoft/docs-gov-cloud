@@ -27,12 +27,11 @@ The following Mule 4 connectors are FIPS compliant:
 * xref:sockets/sockets-documentation.adoc[Sockets]
 * xref:vm/vm-connector.adoc[VM]
 * xref:web-service/web-service-consumer.adoc[Web Service Consumer]
-* WebSockets
 
 The following modules are FIPS compliant:
 
 * xref:compression/compression-module.adoc[Compression]
-* Crypto
+* xref:mule-runtime::cryptography[Crypto]
 * xref:java/java-module.adoc[Java]
 * xref:json/json-module.adoc[JSON]
 * xref:oauth/oauth-documentation.adoc[OAuth]
