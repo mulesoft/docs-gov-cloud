@@ -14,19 +14,19 @@ Although it is not part of Government Cloud, you can use Anypoint Studio offline
 |===
 ||Included|Excluded
 3+^h|xref:design-center::index.adoc[Design Center]
-||xref:design-center::design-create-publish-api-specs.adoc[*Visual API designer*]|xref:design-center::about-designing-a-mule-application.adoc[*Flow designer*]
+||xref:design-center::design-create-publish-api-specs.adoc[*Visual API Designer*]|xref:design-center::about-designing-a-mule-application.adoc[*Flow Designer*]
 3+^h|xref:exchange::index.adoc[*Exchange*]
 ||All|None
 3+^h|*Management Center*
-.9+||xref:access-management::index.adoc[*Access management*]|xref:monitoring::index.adoc[Anypoint Monitoring]
-|xref:anypoint-security::index.adoc[*Anypoint Security*]|xref:anypoint-security::index-policies.adoc[Edge policies]
-||xref:anypoint-security::tokenization.adoc[Tokenization]
-|xref:api-manager::latest-overview-concept.adoc[*API Manager*]|xref:api-manager::analytics-landing-page.adoc[Anypoint Analytics]
-|Runtime Manager: xref:runtime-manager::cloudhub.adoc[*CloudHub*]|xref:runtime-fabric::index.adoc[Runtime Fabric]
-||xref:mq::index.adoc[Anypoint MQ]
-||xref:visualizer::index.adoc[Anypoint Visualizer]
-||xref:data-gateway::index.adoc[Data Gateway]
-||xref:anypoint-security::index.adoc[Secrets Manager]
+.9+||xref:access-management::index.adoc[*Access Management*]|xref:monitoring::index.adoc[*Anypoint Monitoring*]
+|xref:anypoint-security::index.adoc[*Anypoint Security*]|xref:anypoint-security::index-policies.adoc[*Edge Policies*]
+||xref:anypoint-security::tokenization.adoc[*Tokenization*]
+|xref:api-manager::latest-overview-concept.adoc[*API Manager*]|xref:api-manager::analytics-landing-page.adoc[*Anypoint Analytics*]
+|Runtime Manager: xref:runtime-manager::cloudhub.adoc[*CloudHub*]|xref:runtime-fabric::index.adoc[*Runtime Fabric*]
+||xref:mq::index.adoc[*Anypoint MQ*]
+||xref:visualizer::index.adoc[*Anypoint Visualizer*]
+||xref:data-gateway::index.adoc[*Data Gateway*]
+||xref:anypoint-security::index.adoc[*Secrets Manager*]
 |===
 
 // |xref:design-center::design-create-publish-api-specs.adoc[*Visual API designer*]|Flow designer
