@@ -13,7 +13,7 @@ U.S. government.
 
 The following Mule 4 connectors are FIPS compliant:
 
-* xref:connectors/amqp/amqp-connector.adoc[AMQP]
+* xref:connectors::amqp-connector.adoc[AMQP]
 * xref:connectors/db/db-connector-index.adoc[Database]
 * xref:connectors/email/email-connector.adoc[Email]
 * xref:connectors/file/file-connector.adoc[File]
