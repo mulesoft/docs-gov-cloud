@@ -30,7 +30,7 @@ The following Mule 4 connectors are FIPS compliant:
 
 The following modules are FIPS compliant:
 
-* https://docs.mulesoft.com/connectors/compression/compression-module.adoc[Compression]
+* https://docs.mulesoft.com/connectors/compression/compression-module[Compression]
 * xref:mule-runtime::cryptography.adoc[Crypto]
 * https://docs.mulesoft.com/connectors/java/java-module[Java]
 * https://docs.mulesoft.com/connectors/json/json-module[JSON]
