@@ -21,7 +21,7 @@ Although it is not part of Government Cloud, you can use Anypoint Studio offline
 3+^h|*Management Center*
 .9+||xref:access-management::index.adoc[*Access management*]|xref:monitoring::index.adoc[*Anypoint Monitoring*]
 |xref:anypoint-security::index.adoc[*Anypoint Security*]|xref:anypoint-security::index-policies.adoc[*Edge Policies*]
-||xref:anypoint-security::tokenization.adoc[*Tokenization*]
+|xref:object-store/osv2-guide.adoc[*Object Store*]|xref:anypoint-security::tokenization.adoc[*Tokenization*]
 |xref:api-manager::latest-overview-concept.adoc[*API Manager*]|xref:api-manager::analytics-landing-page.adoc[*Anypoint Analytics*]
 |Runtime Manager: xref:runtime-manager::cloudhub.adoc[*CloudHub*]|xref:runtime-fabric::index.adoc[*Runtime Fabric*]
 ||xref:mq::index.adoc[*Anypoint MQ*]
