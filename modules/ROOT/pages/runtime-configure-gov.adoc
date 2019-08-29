@@ -3,17 +3,17 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To use Mule Runtime within the Government Cloud, you must redefine the configuration properties that enable Mule Runtime to point to the EU control plane. You must also provide the client ID and secret of your environment.
+To use Mule Runtime within the Government Cloud, you must redefine the configuration properties that enable Mule Runtime to point to the EU control plane. You must also provide the Client ID and Client Secret of your environment.
 
 By default, the Mule Runtime is configured to point to the US control plane. If you do not override these properties, the Mule Runtime modules are disabled in the EU control plane.
 
-The properties you must override depend on which version of the Mule runtime you are using, as described in the following sections.
+The properties you must override depend on the version of the Mule runtime you are using, as described in the following sections.
 
 == Configuring Mule Runtime 4.0
 
 === wrapper.conf
 
-To configure Mule Runtime using the `wrapper.conf` file, modify the following properties.
+To configure Mule Runtime using the `wrapper.conf` file, modify the following properties:
 
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.client_id=<environment client ID>
@@ -22,7 +22,7 @@ wrapper.java.additional.<n>=-Danypoint.platform.base_uri=https://gov.anypoint.mu
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
 
-In the above example, replace `<n>` with an integer value that is unique within the `wrapper.conf` file.
+In the previous example, replace `<n>` with an integer value that is unique within the `wrapper.conf` file.
 
 === Command Line
 
@@ -35,7 +35,7 @@ To configure Mule Runtime from the command line, use the following options when 
 
 === CloudHub
 
-When deploying to CloudHub, you must include the following properties in the Properties tab. You must also ensure that you enable the autodiscovery feature.
+When deploying to CloudHub, include the following properties in the Properties tab. You must also ensure that you enable the autodiscovery feature.
 
 ----
 anypoint.platform.client_id=<environment client ID>
@@ -48,7 +48,7 @@ anypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mules
 
 === wrapper.conf
 
-To configure `wrapper.conf` file, modify the following properties.
+To configure `wrapper.conf` file, modify the following properties:
 
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.client_id=<org client ID>
@@ -59,11 +59,11 @@ wrapper.java.additional.<n>=-Danypoint.platform.contracts_base_uri=https://gov.a
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
 
-In the above example, replace `<n>` with an integer value that is unique within the `wrapper.conf` file.
+In the previous example, replace `<n>` with an integer value that is unique within the `wrapper.conf` file.
 
 === Command Line
 
-To configure Mule Runtime from the command line, use the following options when starting the Mule runtime:
+To configure Mule Runtime from the command line, use the following options when starting the Mule Runtime:
 
 ----
 ./mule -M-Danypoint.platform.client_id=<org client ID> -M-Danypoint.platform.client_secret=<org client secret> -M-Danypoint.platform.platform_base_uri=https://eu1.anypoint.mulesoft.com/apiplatform -M-Danypoint.platform.coreservice_base_uri=https://eu1.anypoint.mulesoft.com/accounts -M-Danypoint.platform.contracts_base_uri=https://eu1.anypoint.mulesoft.com/apigateway/ccs -M-Danypoint.platform.analytics_base_uri=https://analytics-ingest.eu1.anypoint.mulesoft.com
@@ -71,7 +71,7 @@ To configure Mule Runtime from the command line, use the following options when 
 
 === CloudHub
 
-When deploying to CloudHub, you must add the following in the Properties tab. You must also ensure that you enable the autodiscovery feature.
+When deploying to CloudHub, you must add the following information and enable the autodiscovery feature in the Properties tab. 
 
 ----
 anypoint.platform.client_id=<org client ID>
@@ -81,7 +81,3 @@ anypoint.platform.coreservice_base_uri=https://gov.anypoint.mulesoft.com/account
 anypoint.platform.contracts_base_uri=https://gov.anypoint.mulesoft.com/apigateway/ccs
 anypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
-
-== See Also
-
-* xref:index.adoc[Government Cloud]
