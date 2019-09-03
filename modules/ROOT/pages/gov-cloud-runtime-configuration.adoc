@@ -1,4 +1,4 @@
-= To Enable API Gateway Capabilities for the Government Cloud
+= Configure the Mule Runtime to Connect to the Government Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
