@@ -3,11 +3,11 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To use Mule Runtime within the Government Cloud, you must redefine the configuration properties that enable Mule Runtime to point to the EU control plane. You must also provide the client ID and client secret of the environment belonging to your organization.
+To use Mule Runtime within the Government Cloud, you must redefine the configuration properties that enable Mule Runtime to point to the Government Cloud. You must also provide the client ID and client secret of the environment belonging to your organization.
 
-By default, the Mule Runtime is configured to point to the US control plane. If you do not override these properties, the API Gateway capability of the Mule Runtime is disabled in the EU control plane.
+By default, the Mule Runtime is configured to point to the US control plane. If you do not override these properties, the API Gateway capability of the Mule Runtime is disabled in the Government Cloud.
 
-The properties you must override depend on the version of the Mule runtime you are using, as described in the following sections.
+The properties you must override depend on the version of the Mule Runtime you are using, as described in the following sections.
 
 == Configuring Mule Runtime 4
 
