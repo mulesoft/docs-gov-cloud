@@ -77,8 +77,8 @@ Government Cloud is hosted in Amazon Web Services (AWS) High Authorized GovCloud
 
 AWS GovCloud provides:
 
-* ITAR (International Traffic in Arms Regulations) compliance
-* Department of Defense (DoD) Provisional Authorization at IL (Impact Level) 2, 4, and 5
+* Supports compliance with United States International Traffic in Arms Regulations (ITAR)
+* Has achieved Department of Defense (DoD) Provisional Authorization at IL (Impact Level) 2, 4, and 5
 
 == Cloud Security and Data
 
