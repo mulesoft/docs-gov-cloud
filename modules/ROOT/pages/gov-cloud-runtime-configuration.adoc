@@ -1,19 +1,21 @@
-= Configure the Mule Runtime to Connect to the Government Cloud
+= Configure the Mule Runtime to Connect to MuleSoft Government Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To use Mule Runtime within the Government Cloud, you must redefine the configuration properties that enable Mule Runtime to point to the Government Cloud. You must also provide the client ID and client secret of the environment belonging to your organization.
+To use Mule runtime engine (Mule) within MuleSoft Government Cloud, you must redefine the configuration properties that enable Mule runtime engine to point to MuleSoft Government Cloud. You must also provide the client ID and client secret of the environment belonging to your organization.
 
-By default, the Mule Runtime is configured to point to the US control plane. If you do not override these properties, the API Gateway capability of the Mule Runtime is disabled in the Government Cloud.
+By default, Mule runtime engine is configured to point to the US control plane. If you do not override these properties, the API gateway capability of Mule runtime engine is disabled in MuleSoft Government Cloud.
 
-The properties you must override depend on the version of the Mule Runtime you are using, as described in the following sections.
+The properties you must override depend on the version of Mule runtime engine you are using: Mule 4.0 or Mule 3.x.
 
-== Configuring Mule Runtime 4
+== Configure Mule 4.0
+
+You can configure Mule runtime engine (Mule) using `wrapper.conf`, the command line, or CloudHub.
 
 === wrapper.conf
 
-To configure Mule Runtime using the `wrapper.conf` file, modify the following properties:
+To configure Mule runtime engine using the `wrapper.conf` file, modify the following properties, replacing `<n>` with an integer value that is unique within `wrapper.conf`:
 
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.client_id=<environment client ID>
@@ -22,11 +24,9 @@ wrapper.java.additional.<n>=-Danypoint.platform.base_uri=https://gov.anypoint.mu
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
 
-In the previous example, replace `<n>` with an integer value that is unique within the `wrapper.conf` file.
-
 === Command Line
 
-To configure Mule Runtime from the command line, use the following options when starting the Mule Runtime. Note that `./` only applies to Unix environments.
+To configure Mule runtime engine from the command line, use the following options when starting Mule. Note that `./` only applies to Unix environments.
 
 ----
 ./mule -M-Danypoint.platform.client_id=<environment client ID> -M-Danypoint.platform.client_secret=<environment client secret> -M-Danypoint.platform.base_uri=https://eu1.anypoint.mulesoft.com
@@ -35,7 +35,7 @@ To configure Mule Runtime from the command line, use the following options when 
 
 === CloudHub
 
-When deploying to CloudHub, include the following information in the Properties tab:
+When deploying to CloudHub, include the following properties in the Properties tab:
 
 ----
 anypoint.platform.client_id=<environment client ID>
@@ -44,11 +44,13 @@ anypoint.platform.base_uri=https://gov.anypoint.mulesoft.com
 anypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
 
-== Configuring Mule Runtime 3.x
+== Configure Mule 3.x
+
+You can configure Mule runtime engine (Mule) using `wrapper.conf`, the command line, or CloudHub.
 
 === wrapper.conf
 
-To configure `wrapper.conf` file, modify the following properties:
+To configure the `wrapper.conf` file, modify the following properties, replacing `<n>` with an integer value that is unique within `wrapper.conf`:
 
 ----
 wrapper.java.additional.<n>=-Danypoint.platform.client_id=<environment client ID>
@@ -59,11 +61,9 @@ wrapper.java.additional.<n>=-Danypoint.platform.contracts_base_uri=https://gov.a
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
 
-In the previous example, replace `<n>` with an integer value that is unique within the `wrapper.conf` file.
-
 === Command Line
 
-To configure Mule Runtime from the command line, use the following options when starting the Mule Runtime. Note that `./` only applies to Unix environments.
+To configure Mule runtime engine from the command line, use the following options when starting Mule. Note that `./` only applies to Unix environments.
 
 ----
 ./mule -M-Danypoint.platform.client_id=<environment client ID> -M-Danypoint.platform.client_secret=<environment client secret> -M-Danypoint.platform.platform_base_uri=https://eu1.anypoint.mulesoft.com/apiplatform -M-Danypoint.platform.coreservice_base_uri=https://eu1.anypoint.mulesoft.com/accounts -M-Danypoint.platform.contracts_base_uri=https://eu1.anypoint.mulesoft.com/apigateway/ccs -M-Danypoint.platform.analytics_base_uri=https://analytics-ingest.eu1.anypoint.mulesoft.com
