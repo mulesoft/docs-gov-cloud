@@ -5,7 +5,7 @@ endif::[]
 
 After you set up your account, Government Cloud works with your identity provider (IdP) to enable single sign-on (SSO) for users in your agency. Instead of using the Anypoint Platform sign-in page, your users sign in to the SSO system to access Anypoint Platform.
 
-When you purchase Government Cloud, your Customer Success Manager sends you onboarding instructions and access to the https://support.mulesoft.com/s/[MulesSoft Support Portal].
+When you purchase Government Cloud, your Customer Success Manager sends you onboarding instructions and access to the https://help.mulesoft.com[MuleSoft Help Center].
 
 To configure your IdP to work with Government Cloud:
 
