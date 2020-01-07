@@ -23,3 +23,6 @@ For the required information, see the documentation that applies to the SSO stan
 ** xref:access-management::managing-users.adoc[SAML]
 
 Using the information you provide, MuleSoft Support configures the IdP to enable SSO for your organization.
+
+[IMPORTANT]
+Government Cloud does not support the configuration of local users, for which usernames and encrypted passwords are stored outside of Government Cloud.
