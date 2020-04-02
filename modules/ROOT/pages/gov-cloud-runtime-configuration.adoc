@@ -11,7 +11,7 @@ The properties you must override depend on the version of Mule runtime engine yo
 
 == Configure Mule 4.0
 
-You can configure Mule runtime engine (Mule) using `wrapper.conf`, the command line, or CloudHub.
+You can configure Mule runtime engine (Mule) using `wrapper.conf`, the command line, or MuleSoft Government Cloud.
 
 === wrapper.conf
 
@@ -23,6 +23,8 @@ wrapper.java.additional.<n>=-Danypoint.platform.client_secret=<environment clien
 wrapper.java.additional.<n>=-Danypoint.platform.base_uri=https://gov.anypoint.mulesoft.com
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
+[NOTE]
+Analytics are not currently available.
 
 === Command Line
 
@@ -32,10 +34,12 @@ To configure Mule runtime engine from the command line, use the following option
 ./mule -M-Danypoint.platform.client_id=<environment client ID> -M-Danypoint.platform.client_secret=<environment client secret> -M-Danypoint.platform.base_uri=https://eu1.anypoint.mulesoft.com
 -M-Danypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
+[NOTE]
+Analytics are not currently available.
 
-=== CloudHub
+=== MuleSoft Government Cloud
 
-When deploying to CloudHub, include the following properties in the Properties tab:
+When deploying to MuleSoft Government Cloud, include the following properties in the Properties tab:
 
 ----
 anypoint.platform.client_id=<environment client ID>
@@ -43,10 +47,12 @@ anypoint.platform.client_secret=<environment client secret>
 anypoint.platform.base_uri=https://gov.anypoint.mulesoft.com
 anypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
+[NOTE]
+Analytics are not currently available.
 
 == Configure Mule 3.x
 
-You can configure Mule runtime engine (Mule) using `wrapper.conf`, the command line, or CloudHub.
+You can configure Mule runtime engine (Mule) using `wrapper.conf`, the command line, or MuleSoft Government Cloud.
 
 === wrapper.conf
 
@@ -60,6 +66,8 @@ wrapper.java.additional.<n>=-Danypoint.platform.coreservice_base_uri=https://gov
 wrapper.java.additional.<n>=-Danypoint.platform.contracts_base_uri=https://gov.anypoint.mulesoft.com/apigateway/ccs
 wrapper.java.additional.<n>=-Danypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
+[NOTE]
+Analytics are not currently available.
 
 === Command Line
 
@@ -68,10 +76,12 @@ To configure Mule runtime engine from the command line, use the following option
 ----
 ./mule -M-Danypoint.platform.client_id=<environment client ID> -M-Danypoint.platform.client_secret=<environment client secret> -M-Danypoint.platform.platform_base_uri=https://eu1.anypoint.mulesoft.com/apiplatform -M-Danypoint.platform.coreservice_base_uri=https://eu1.anypoint.mulesoft.com/accounts -M-Danypoint.platform.contracts_base_uri=https://eu1.anypoint.mulesoft.com/apigateway/ccs -M-Danypoint.platform.analytics_base_uri=https://analytics-ingest.eu1.anypoint.mulesoft.com
 ----
+[NOTE]
+Analytics are not currently available.
 
-=== CloudHub
+=== MuleSoft Government Cloud
 
-When deploying to CloudHub, you must add the following information and enable the autodiscovery feature in the Properties tab. 
+When deploying to MuleSoft Government Cloud, you must add the following information and enable the autodiscovery feature in the Properties tab. 
 
 ----
 anypoint.platform.client_id=<environment client ID>
@@ -81,3 +91,5 @@ anypoint.platform.coreservice_base_uri=https://gov.anypoint.mulesoft.com/account
 anypoint.platform.contracts_base_uri=https://gov.anypoint.mulesoft.com/apigateway/ccs
 anypoint.platform.analytics_base_uri=https://analytics-ingest.gov.anypoint.mulesoft.com
 ----
+[NOTE]
+Analytics are not currently available.
