@@ -3,4 +3,3 @@
 * xref:gov-cloud-features.adoc[Features Included in Government Cloud]
 * xref:gov-cloud-security.adoc[Security in Government Cloud]
 * xref:gov-cloud-account-setup.adoc[Set Up Your Government Cloud Account]
-* xref:gov-cloud-runtime-configuration.adoc[Configure the Mule Runtime to Connect to the Government Cloud]
