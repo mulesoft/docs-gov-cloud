@@ -9,19 +9,17 @@ By default, Mule runtime engine is configured to run in FIPS-compliant mode. See
 
 Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications to deploy in Government Cloud. See xref:studio::set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials] for additional information.
 
-The following features are included in Government Cloud:
-
 * xref:design-center::index.adoc[Design Center]
 
 ** xref:design-center::design-create-publish-api-specs.adoc[API Designer]
 ** xref:design-center::design-create-publish-api-specs.adoc[Visual API Designer]
-** xref:apikit::apikit-console-concept.adoc[API Console]
+** xref:apikit::apikit-4-xml-reference.adoc[API Console]
 ** xref:design-center::design-mocking-service.adoc[Mocking service]
 ** xref:exchange::to-create-an-asset.adoc[RAML and OAS support]
 * xref:exchange::index.adoc[Exchange]
 ** xref:api-manager::access-developer-portal-task.adoc[API developer portals]
 ** xref:design-center::design-mocking-service.adoc[API simulation (mocking service)]
-** xref:api-manager::api-notebook-concept.adoc[API Notebooks]
+** xref:api-manager/1.x/api-notebook-concept.adoc[API Notebooks]
 ** xref:apikit::apikit-4-generate-workflow.adoc[API testing function]
 * *Management Center*
 ** xref:access-management::index.adoc[*Access management*]
@@ -39,7 +37,7 @@ The following products will be phased into Government Cloud over time:
 * xref:visualizer::index.adoc[Anypoint Visualizer]
 * xref:data-gateway::index.adoc[API Data Gateway]
 
-For a detailed list of components and support for each component by control plane, refer to xref:general/intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
+For a detailed list of components and support for each component by control plane, refer to xref:general::intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
 
 == See Also
 
