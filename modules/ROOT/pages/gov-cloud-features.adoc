@@ -3,11 +3,11 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Government Cloud includes the full functionality of the Anypoint platform runtime plane (services and Mule runtime engine) and a subset of the Anypoint platform control plane (browser-based management of APIs and Mule runtime engines) functionality. Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
+Government Cloud includes the full functionality of the Anypoint Platform runtime plane (services and Mule runtime engine) and a subset of the Anypoint Platform control plane (browser-based management of APIs and Mule runtime engines) functionality. Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
 
 By default, Mule runtime engine is configured to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support] for additional information.
 
-Although it is not part of Government Cloud, you can use Anypoint Studio offline to build applications to deploy in Government Cloud. See xref:studio::set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials] for additional information.
+Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications to deploy in Government Cloud. See xref:studio::set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials] for additional information.
 
 The following features are included in Government Cloud:
 
@@ -15,20 +15,20 @@ The following features are included in Government Cloud:
 
 ** xref:design-center::design-create-publish-api-specs.adoc[API Designer]
 ** xref:design-center::design-create-publish-api-specs.adoc[Visual API Designer]
-** xref:design-center::???.adoc[API Console]
-** xref:design-center::???.adoc[Mocking service]
-** xref:design-center::???.adoc[RAML and OAS support]
+** xref:design-center::???.adoc[API Console]https://docs.mulesoft.com/apikit/3.x/apikit-console-concept
+** xref:design-center::???.adoc[Mocking service]https://docs.mulesoft.com/design-center/design-mocking-service
+** xref:design-center::???.adoc[RAML and OAS support]https://docs.mulesoft.com/exchange/to-create-an-asset
 * xref:exchange::index.adoc[Exchange]
-** xref:exchange::???.adoc[API developer portals]
-** xref:exchange::???.adoc[API simulation (mocking service)]
-** xref:exchange::???.adoc[API Notebooks]
-** xref:exchange::???.adoc[API testing function]
+** xref:exchange::???.adoc[API developer portals]https://docs.mulesoft.com/api-manager/2.x/access-developer-portal-task
+** xref:exchange::???.adoc[API simulation (mocking service)]https://docs.mulesoft.com/design-center/design-mocking-service
+** xref:exchange::???.adoc[API Notebooks]https://docs.mulesoft.com/api-manager/1.x/api-notebook-concept
+** xref:exchange::???.adoc[API testing function]https://docs.mulesoft.com/apikit/4.x/apikit-4-generate-workflow
 * *Management Center*
 ** xref:access-management::index.adoc[*Access management*]
 ** xref:object-store::osv2-guide.adoc[*Object Store*]
 ** xref:api-manager::latest-overview-concept.adoc[*API Manager*]
-** xref:runtime-manager::???.adoc[*Runtime Manager*]
-** xref:runtime-manager::cloudhub.adoc[*CloudHub*]
+** xref:runtime-manager::???.adoc[*Runtime Manager*]https://docs.mulesoft.com/runtime-manager/
+** xref:runtime-manager::cloudhub.adoc[*CloudHub*]https://docs.mulesoft.com/runtime-manager/cloudhub
 
 The following products will be phased into Government Cloud over time:
 
