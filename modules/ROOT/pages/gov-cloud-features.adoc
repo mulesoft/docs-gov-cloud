@@ -15,20 +15,20 @@ The following features are included in Government Cloud:
 
 ** xref:design-center::design-create-publish-api-specs.adoc[API Designer]
 ** xref:design-center::design-create-publish-api-specs.adoc[Visual API Designer]
-** xref:design-center::???.adoc[API Console]https://docs.mulesoft.com/apikit/3.x/apikit-console-concept
-** xref:design-center::???.adoc[Mocking service]https://docs.mulesoft.com/design-center/design-mocking-service
-** xref:design-center::???.adoc[RAML and OAS support]https://docs.mulesoft.com/exchange/to-create-an-asset
+** xref:apikit::apikit-console-concept.adoc[API Console]
+** xref:design-center::design-mocking-service.adoc[Mocking service]
+** xref:exchange::to-create-an-asset.adoc[RAML and OAS support]
 * xref:exchange::index.adoc[Exchange]
-** xref:exchange::???.adoc[API developer portals]https://docs.mulesoft.com/api-manager/2.x/access-developer-portal-task
-** xref:exchange::???.adoc[API simulation (mocking service)]https://docs.mulesoft.com/design-center/design-mocking-service
-** xref:exchange::???.adoc[API Notebooks]https://docs.mulesoft.com/api-manager/1.x/api-notebook-concept
-** xref:exchange::???.adoc[API testing function]https://docs.mulesoft.com/apikit/4.x/apikit-4-generate-workflow
+** xref:api-manager::access-developer-portal-task.adoc[API developer portals]
+** xref:design-center::design-mocking-service.adoc[API simulation (mocking service)]
+** xref:api-manager::api-notebook-concept.adoc[API Notebooks]
+** xref:apikit::apikit-4-generate-workflow.adoc[API testing function]
 * *Management Center*
 ** xref:access-management::index.adoc[*Access management*]
 ** xref:object-store::osv2-guide.adoc[*Object Store*]
 ** xref:api-manager::latest-overview-concept.adoc[*API Manager*]
-** xref:runtime-manager::???.adoc[*Runtime Manager*]https://docs.mulesoft.com/runtime-manager/
-** xref:runtime-manager::cloudhub.adoc[*CloudHub*]https://docs.mulesoft.com/runtime-manager/cloudhub
+** xref:runtime-manager::index.adoc[*Runtime Manager*]
+** xref:runtime-manager::cloudhub.adoc[*CloudHub*]
 
 The following products will be phased into Government Cloud over time:
 
@@ -39,7 +39,7 @@ The following products will be phased into Government Cloud over time:
 * xref:visualizer::index.adoc[Anypoint Visualizer]
 * xref:data-gateway::index.adoc[API Data Gateway]
 
-For a detailed list of components and support for each component by control plane, refer to https://docs.mulesoft.com/general/intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
+For a detailed list of components and support for each component by control plane, refer to xref:general/intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
 
 == See Also
 
