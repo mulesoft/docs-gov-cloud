@@ -3,44 +3,41 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Government Cloud includes the full functionality of the runtime plane (services and Mule runtime engine) and a subset of the control plane (browser-based management of APIs and Mule runtime engines) Anypoint Platform features. Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
+Government Cloud includes the full functionality of the Anypoint platform runtime plane (services and Mule runtime engine) and a subset of the Anypoint platform control plane (browser-based management of APIs and Mule runtime engines) functionality. Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
 
-By default, Mule runtime engine is configured to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
+By default, Mule runtime engine is configured to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support] for additional information.
 
-Although it is not part of Government Cloud, you can use Anypoint Studio offline to build applications to deploy in Government Cloud. See xref:studio::set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials].
+Although it is not part of Government Cloud, you can use Anypoint Studio offline to build applications to deploy in Government Cloud. See xref:studio::set-credentials-in-studio-to.adoc[Configuring Anypoint Platform Credentials] for additional information.
 
-[cols="1,2,2",grid="none",options="header"]
-.Features in Government Cloud
-|===
-||Included|
-3+^h|xref:design-center::index.adoc[Design Center]
-||xref:design-center::design-create-publish-api-specs.adoc[*API Designer*]|
-||xref:design-center::design-create-publish-api-specs.adoc[*Visual API Designer*]|
-||xref:design-center::???.adoc[*API Console*]|
-||xref:design-center::???.adoc[*Mocking service*]|
-||xref:design-center::???.adoc[*RAML and OAS support*]|
-3+^h|xref:exchange::index.adoc[*Exchange*]
-||xref:exchange::???.adoc[*API developer portals*]|
-||xref:exchange::???.adoc[*API simulation (mocking service)*]|
-||xref:exchange::???.adoc[*API Notebooks*]|
-||xref:exchange::???.adoc[*API testing function*]|
-3+^h|*Management Center*
-.10+||xref:access-management::index.adoc[*Access management*]|
-|xref:object-store::osv2-guide.adoc[*Object Store*]|
-|xref:api-manager::latest-overview-concept.adoc[*API Manager*]|
-|xref:runtime-manager::???.adoc[*Runtime Manager*]|
-|xref:runtime-manager::cloudhub.adoc[*CloudHub*]|
-|===
+The following features are included in Government Cloud:
 
-The following products will be phased in over time:
+* xref:design-center::index.adoc[Design Center]
 
+** xref:design-center::design-create-publish-api-specs.adoc[API Designer]
+** xref:design-center::design-create-publish-api-specs.adoc[Visual API Designer]
+** xref:design-center::???.adoc[API Console]
+** xref:design-center::???.adoc[Mocking service]
+** xref:design-center::???.adoc[RAML and OAS support]
+* xref:exchange::index.adoc[Exchange]
+** xref:exchange::???.adoc[API developer portals]
+** xref:exchange::???.adoc[API simulation (mocking service)]
+** xref:exchange::???.adoc[API Notebooks]
+** xref:exchange::???.adoc[API testing function]
+* *Management Center*
+** xref:access-management::index.adoc[*Access management*]
+** xref:object-store::osv2-guide.adoc[*Object Store*]
+** xref:api-manager::latest-overview-concept.adoc[*API Manager*]
+** xref:runtime-manager::???.adoc[*Runtime Manager*]
+** xref:runtime-manager::cloudhub.adoc[*CloudHub*]
 
-https://docs.mulesoft.com/api-manager/2.x/analytics-landing-page [Anypoint Analytics 
-https://docs.mulesoft.com/monitoring/ Anypoint Monitoring
-https://docs.mulesoft.com/mq/ [Anypoint MQ
-https://docs.mulesoft.com/anypoint-security/ [Anypoint Security
-https://docs.mulesoft.com/visualizer/ [Anypoint Visualizer
-https://docs.mulesoft.com/data-gateway/ [API Data Gateway]
+The following products will be phased into Government Cloud over time:
+
+* xref:api-manager::analytics-landing-page.adoc[Anypoint Analytics] 
+* xref:monitoring::index.adoc[Anypoint Monitoring]
+* xref:mq::index.adoc[Anypoint MQ]
+* xref:anypoint-security::index.adoc[Anypoint Security]
+* xref:visualizer::index.adoc[Anypoint Visualizer]
+* xref:data-gateway::index.adoc[API Data Gateway]
 
 For a detailed list of components and support for each component by control plane, refer to https://docs.mulesoft.com/general/intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
 
