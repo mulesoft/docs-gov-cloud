@@ -15,7 +15,7 @@ Although Anypoint Studio is not part of Government Cloud, you can use Anypoint S
 ** xref:design-center::design-create-publish-api-visual-editor.adoc[Visual API Designer]
 ** xref:design-center::design-create-publish-api-specs#documenting[API Console]
 ** xref:design-center::design-migrating-ms#what-the-mocking-service-is[Mocking service]
-** xref:design-center/design-create-publish-api-specs#designing[RAML and OAS support]
+** xref:design-center::design-create-publish-api-specs#designing[RAML and OAS support]
 * xref:exchange::index.adoc[Exchange]
 ** xref:exchange::to-describe-an-asset.adoc[API developer portals]
 ** xref:exchange::ex2-to-simulate-api-data.adoc[API simulation (mocking service)]
