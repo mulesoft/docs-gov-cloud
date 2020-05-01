@@ -20,7 +20,8 @@ Although Anypoint Studio is not part of Government Cloud, you can use Anypoint S
 ** xref:exchange::to-describe-an-asset.adoc[API developer portals]
 ** xref:exchange::ex2-to-simulate-api-data.adoc[API simulation (mocking service)]
 ** xref:exchange::about-documenting-an-api.adoc[API Notebooks]
-** xref:exchange::ex2-to-simulate-api-data.adoc[API testing function]
+** xref:munit::index.adoc[MUnit]
+** xref:apikit::overview-4.adoc[APIKit]
 * Management Center
 ** xref:access-management::index.adoc[Access Management]
 ** xref:object-store::osv2-guide.adoc[Object Store]
