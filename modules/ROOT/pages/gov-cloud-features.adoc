@@ -38,7 +38,7 @@ The following products are not currently supported:
 * xref:visualizer::index.adoc[Anypoint Visualizer]
 * xref:data-gateway::index.adoc[API Data Gateway]
 
-For a detailed list of components and support information for each component by control plane, refer to xref:general::intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
+For a detailed list of components and support information for each component by control plane, refer to the xref:general::intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
 
 == See Also
 
