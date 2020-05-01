@@ -32,11 +32,11 @@ Although Anypoint Studio is not part of Government Cloud, you can use Anypoint S
 The following products are not currently supported:
 
 * xref:api-manager::analytics-landing-page.adoc[Anypoint Analytics]
-* xref:monitoring::index.adoc:Anypoint Monitoring
-* xref:mq::index.adoc:Anypoint MQ
-* xref:anypoint-security::index.adoc:Anypoint Security
-* xref:visualizer::index.adoc:Anypoint Visualizer
-* xref:data-gateway::index.adoc:API Data Gateway
+* xref:monitoring::index.adoc[Anypoint Monitoring]
+* xref:mq::index.adoc[Anypoint MQ]
+* xref:anypoint-security::index.adoc[Anypoint Security]
+* xref:visualizer::index.adoc[Anypoint Visualizer]
+* xref:data-gateway::index.adoc[API Data Gateway]
 
 For a detailed list of components and support information for each component by control plane, refer to xref:general::intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
 
