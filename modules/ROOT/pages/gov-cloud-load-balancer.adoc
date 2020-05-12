@@ -12,7 +12,7 @@ The MuleSoft Government Cloud load balancer redirects requests, where `_myApp_` 
 
 The load balancer listens for outside requests over HTTPS and, by default, communicates internally with your worker over HTTP. If you configured your Mule application within the Anypoint VPC to listen on HTTPS, make sure 
 you set `upstreamProtocol` to `HTTPS` when creating the mapping list using the 
-xref:anypoint-platform-cli-commands.adoc#cloudhub-load-balancer-mappings-add[`load-balancer mappings add`] command.
+xref:runtime-manager::anypoint-platform-cli-commands.adoc#cloudhub-load-balancer-mappings-add[`load-balancer mappings add`] command.
 
 == Route External Requests to the Dedicated Load Balancer
 
@@ -81,5 +81,5 @@ the MuleSoft Government Cloud worker.
 
 == See Also
 
-* xref:virtual-private-cloud.adoc[Virtual Private Cloud]
-* xref:lb-mapping-rules.adoc[Mapping Rules]
+* xref:runtime-manager::virtual-private-cloud.adoc[Virtual Private Cloud]
+* xref:runtime-manager::lb-mapping-rules.adoc[Mapping Rules]
