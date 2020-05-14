@@ -64,6 +64,10 @@ If you want your load balancer to manage all connections to your application but
 name for your application publicly exposed, then each application must listen on HTTP port 8091 or 8092. Alternatively, 
 you can create a custom mapping policy to redirect outside requests from your load balancer to your specific application.
 
+The following graphic shows how a load balancer interacts between a VPC and Anypoint Platform.
+
+image::pxty-lb.png[Load Balancer]
+
 Your load balancer listens for outside requests over HTTPS and, by default, communicates internally with your worker 
 over HTTP. If you configured your Mule application within Anypoint VPC to listen on HTTPS, you must 
 set `upstreamProtocol` to HTTPS when creating the mapping list using the `load-balancer mappings add` command.
