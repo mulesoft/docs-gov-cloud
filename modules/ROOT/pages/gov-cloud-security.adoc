@@ -9,7 +9,7 @@ Government Cloud meets the security requirements of FedRAMP (Federal Risk and Au
 
 Government Cloud meets all FedRAMP security and compliance standards. FedRAMP provides a standardized approach 
 to security assessment, authorization, and continuous monitoring for cloud products and services used by the 
-U.S. government.
+U.S. government. For additional information, refer to https://marketplace.fedramp.gov/#/product/mulesoft-government-cloud?sort=productName[MuleSoft Government Cloud FedRAMP Authorization].
 
 The following Mule 4 connectors are FIPS compliant:
 
@@ -40,6 +40,8 @@ The following modules are FIPS compliant:
 * https://docs.mulesoft.com/connectors/spring/spring-module[Spring]
 * https://docs.mulesoft.com/connectors/validation/validation-connector[Validation]
 * https://docs.mulesoft.com/connectors/xml/xml-module[XML]
+
+A partial list of FIPS 140-2 compliant cipher suites is provided in xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
 
 A Third-Party Assessment Organization (3PAO) performs the security assessments following guidance in the 
 National Institute of Standards and Technology (NIST) 800-37 publication. The security assessment validates 
@@ -102,4 +104,3 @@ The MuleSoft Compliance and Information Security teams:
 * xref:gov-cloud::gov-cloud-features.adoc[Features Included in Government Cloud]
 * https://aws.amazon.com/govcloud-us/[AWS GovCloud]
 * https://www.fedramp.gov/[FedRAMP]
-* https://marketplace.fedramp.gov/#/product/mulesoft-government-cloud?sort=productName[MuleSoft Government Cloud FedRAMP Authorization]
