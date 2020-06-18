@@ -1,13 +1,13 @@
-= Security in Government Cloud
+= Security in MuleSoft Government Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Government Cloud meets the security requirements of FedRAMP (Federal Risk and Authorization Management Program) and other security protocols.
+MuleSoft Government Cloud meets the security requirements of FedRAMP (Federal Risk and Authorization Management Program) and other security protocols.
 
 == FedRAMP Compliance
 
-Government Cloud meets all FedRAMP security and compliance standards. FedRAMP provides a standardized approach 
+MuleSoft Government Cloud meets all FedRAMP security and compliance standards. FedRAMP provides a standardized approach 
 to security assessment, authorization, and continuous monitoring for cloud products and services used by the 
 U.S. government. For additional information, refer to https://marketplace.fedramp.gov/#/product/mulesoft-government-cloud?sort=productName[MuleSoft Government Cloud FedRAMP Authorization].
 
@@ -41,18 +41,18 @@ The following modules are FIPS compliant:
 * https://docs.mulesoft.com/connectors/validation/validation-connector[Validation]
 * https://docs.mulesoft.com/connectors/xml/xml-module[XML]
 
-A partial list of FIPS 140-2 compliant cipher suites is provided in xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
+A partial list of FIPS 140-2 compliant cipher suites supported by MuleSoft Government Cloud is provided in xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
 
 A Third-Party Assessment Organization (3PAO) performs the security assessments following guidance in the 
 National Institute of Standards and Technology (NIST) 800-37 publication. The security assessment validates 
 management, operational, and technical security controls used to protect the confidentiality, integrity, and 
-availability of Government Cloud and the data it stores, transmits, and processes.
+availability of MuleSoft Government Cloud and the data it stores, transmits, and processes.
 
 MuleSoft obtained the FedRAMP Agency Authority to Operate (ATO) at the *Moderate Impact Risk* level.
 
 == Security Protocols
 
-In addition to FedRAMP compliance, Government Cloud adheres to these security protocols:
+In addition to FedRAMP compliance, MuleSoft Government Cloud adheres to these security protocols:
 
 * *Federal Information Processing Standards* (FIPS 140-2)
 +
@@ -75,7 +75,7 @@ Hardens instances to address the Center for Internet Security checklists.
 
 == Secure Hosting Platform
 
-Government Cloud is hosted in Amazon Web Services (AWS) High Authorized GovCloud.
+MuleSoft Government Cloud is hosted in Amazon Web Services (AWS) High Authorized GovCloud.
 
 AWS GovCloud:
 
@@ -84,13 +84,13 @@ AWS GovCloud:
 
 == Cloud Security and Data
 
-Government Cloud provides a highly secure environment for government entities to perform sensitive data manipulations.
+MuleSoft Government Cloud provides a highly secure environment for government entities to perform sensitive data manipulations.
 
 Mule runtime engine transmits but does not inspect, permanently store, or otherwise interact directly with government data. Government agencies always maintain control over their data, configuration, and workers.
 
 == Support and Maintenance
 
-MuleSoft supports Government Cloud with dedicated support personnel located in the United States. MuleSoft provides continuous monitoring services to protect confidentiality, integrity, and availability of government data managed in Government Cloud.
+MuleSoft supports MuleSoft Government Cloud with dedicated support personnel located in the United States. MuleSoft provides continuous monitoring services to protect confidentiality, integrity, and availability of government data managed in MuleSoft Government Cloud.
 
 The MuleSoft Compliance and Information Security teams:
 
@@ -101,6 +101,6 @@ The MuleSoft Compliance and Information Security teams:
 
 == See Also
 
-* xref:gov-cloud::gov-cloud-features.adoc[Features Included in Government Cloud]
+* xref:gov-cloud::gov-cloud-features.adoc[Features Included in MuleSoft Government Cloud]
 * https://aws.amazon.com/govcloud-us/[AWS GovCloud]
 * https://www.fedramp.gov/[FedRAMP]
