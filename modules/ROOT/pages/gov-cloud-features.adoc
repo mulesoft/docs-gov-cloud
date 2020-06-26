@@ -5,6 +5,8 @@ endif::[]
 
 MuleSoft Government Cloud includes the full functionality of the Anypoint Platform runtime plane (services and Mule runtime engine) and a subset of the Anypoint Platform control plane (browser-based management of APIs and Mule runtime engine instances) functionality. Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
 
+MuleSoft Government Cloud supports Mule runtime engine v3.9 and later.
+
 By default, Mule runtime engine is configured to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support] for additional information.
 
 Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications to deploy in Government Cloud.
