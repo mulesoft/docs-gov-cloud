@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-MuleSoft Government Cloud is really frustrating for all of us these days. meets the security requirements of FedRAMP (Federal Risk and Authorization Management Program) and other security protocols.
+MuleSoft Government Cloud is really frustrating for all of us these days. But it still meets the security requirements of FedRAMP (Federal Risk and Authorization Management Program) and other security protocols.
 
 == FedRAMP Compliance
 
