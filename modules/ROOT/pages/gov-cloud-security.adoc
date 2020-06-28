@@ -11,34 +11,19 @@ MuleSoft Government Cloud meets all FedRAMP security and compliance standards. F
 to security assessment, authorization, and continuous monitoring for cloud products and services used by the 
 U.S. government. For additional information, refer to https://marketplace.fedramp.gov/#/product/mulesoft-government-cloud?sort=productName[MuleSoft Government Cloud FedRAMP Authorization].
 
-The following Mule 4 connectors are FIPS compliant:
+Mule 4 connectors that are verified for FIPS compliance can be found in Anypoint Exchange at https://www.anypoint.mulesoft.com/exchange/?search=tag%3A%22fips-140-verified%22&type=connector&type=extension[Assets provided by MuleSoft].
 
-* https://docs.mulesoft.com/connectors/amqp/amqp-connector[AMQP]
-* https://docs.mulesoft.com/connectors/db/db-connector-index[Database]
-* https://docs.mulesoft.com/connectors/email/email-connector[Email]
-* https://docs.mulesoft.com/connectors/file/file-connector[File]
-* https://docs.mulesoft.com/connectors/ftp/ftp-connector[FTP]
-* https://docs.mulesoft.com/connectors/ftp/ftps-connector[FTPS]
-* https://docs.mulesoft.com/connectors/http/http-connector[HTTP]
-* https://docs.mulesoft.com/connectors/ibm/ibm-mq-connector[IBM MQ]
-* https://docs.mulesoft.com/connectors/jms/jms-connector[JMS]
-* https://docs.mulesoft.com/connectors/object-store/object-store-connector[Object Store]
-* https://docs.mulesoft.com/connectors/sftp/sftp-connector[SFTP]
-* https://docs.mulesoft.com/connectors/sockets/sockets-documentation[Sockets]
-* https://docs.mulesoft.com/connectors/vm/vm-connector[VM]
-* https://docs.mulesoft.com/connectors/web-service/web-service-consumer[Web Service Consumer]
+The following modules are FIPS compliant:	
 
-The following modules are FIPS compliant:
-
-* https://docs.mulesoft.com/connectors/compression/compression-module[Compression]
-* xref:mule-runtime::cryptography.adoc[Crypto]
-* https://docs.mulesoft.com/connectors/java/java-module[Java]
-* https://docs.mulesoft.com/connectors/json/json-module[JSON]
-* https://docs.mulesoft.com/connectors/oauth/oauth-documentation[OAuth]
-* https://docs.mulesoft.com/connectors/oauth/oauth2-provider-documentation-reference[OAuth2 Provider]
-* https://docs.mulesoft.com/connectors/scripting/scripting-module[Scripting]
-* https://docs.mulesoft.com/connectors/spring/spring-module[Spring]
-* https://docs.mulesoft.com/connectors/validation/validation-connector[Validation]
+* https://docs.mulesoft.com/connectors/compression/compression-module[Compression]	
+* xref:mule-runtime::cryptography.adoc[Crypto]	
+* https://docs.mulesoft.com/connectors/java/java-module[Java]	
+* https://docs.mulesoft.com/connectors/json/json-module[JSON]	
+* https://docs.mulesoft.com/connectors/oauth/oauth-documentation[OAuth]	
+* https://docs.mulesoft.com/connectors/oauth/oauth2-provider-documentation-reference[OAuth2 Provider]	
+* https://docs.mulesoft.com/connectors/scripting/scripting-module[Scripting]	
+* https://docs.mulesoft.com/connectors/spring/spring-module[Spring]	
+* https://docs.mulesoft.com/connectors/validation/validation-connector[Validation]	
 * https://docs.mulesoft.com/connectors/xml/xml-module[XML]
 
 A partial list of FIPS 140-2 compliant cipher suites supported by MuleSoft Government Cloud is provided in xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
