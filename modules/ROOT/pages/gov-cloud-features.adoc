@@ -25,6 +25,9 @@ Although Anypoint Studio is not part of Government Cloud, you can use Anypoint S
 ** xref:apikit::overview-4.adoc[APIKit]
 * Management Center
 ** xref:access-management::index.adoc[Anypoint Access Management]
++
+[NOTE]
+Some items displayed in the Access Management UI, such as API alerts and analytics information, cannot be accessed or configured.
 ** xref:object-store::osv2-guide.adoc[Object Store]
 ** xref:api-manager::latest-overview-concept.adoc[API Manager]
 ** xref:runtime-manager::index.adoc[Runtime Manager]
