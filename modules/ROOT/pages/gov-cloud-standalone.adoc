@@ -1,0 +1,41 @@
+= Standalone Mule Runtime Engine Support
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+MuleSoft Government Cloud supports the deployment of standalone Mule runtime engines (Mules). 
+
+Rigorous internal security and compliance reviews were performed on services that support standalone Mule deployments in MuleSoft Government Cloud. 
+The Significant Change Request Form and updated System Security Plan were approved by our FedRAMP sponsoring agency.
+
+Standalone Mule support enables federal, state, and local government customers to deploy Mules inside their private cloud or 
+on-premises environment and manage them using the MuleSoft Government Cloud control plane. Key features include:
+
+* Mule Management
+
+** Unified view of applications, servers, and APIs
+** Application deployment and management across all environments
+** Integration with continuous deployment pipelines
+** xref:runtime-manager::index.adoc[Anypoint Runtime Manager] capabilities
+
+* Mule Monitoring
+
+** Dashboards for apps, servers, and server groups
+** Visibility into usage and performance metrics
+** Email alerts and notifications
+** Performance metrics for flows
+** xref:runtime-manager::monitoring.adoc[Monitor Applications and Servers] 
+
+== Mule Version Support
+
+The following Mule versions are supported for standalone Mule support in MuleSoft Government Cloud:
+
+* 4.0.x
+* 4.1.x
+* 4.2.x
+* 4.3.x
+
+== Standalone Mules and FedRAMP boundary
+<<fill this in>>
+
+To get started, refer to the xref:runtime-manager::index.adoc[Anypoint Runtime Manager] documentation.
