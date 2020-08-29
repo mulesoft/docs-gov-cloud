@@ -42,7 +42,7 @@ Some items displayed in the Access Management UI, such as API alerts and analyti
 ** xref:api-manager::latest-overview-concept.adoc[API Manager]
 ** xref:runtime-manager::index.adoc[Runtime Manager]
 ** xref:runtime-manager::cloudhub.adoc[CloudHub]
-* Standalone deployment of Mule applications
+* xref:gov-cloud-standalone.adoc[Standalone Mule Support]
 
 The following products are not currently supported:
 
