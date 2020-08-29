@@ -1,4 +1,4 @@
-= Standalone Mule Runtime Engine Support
+= Standalone Mule Support
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
