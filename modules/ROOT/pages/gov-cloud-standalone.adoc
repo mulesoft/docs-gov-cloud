@@ -22,7 +22,7 @@ on-premises environment and manage them using the MuleSoft Government Cloud cont
 ** Integration with continuous deployment pipelines
 ** xref:runtime-manager::index.adoc[Anypoint Runtime Manager] capabilities
 
-* Mule Monitoring
+* Anypoint Runtime Manager Monitoring
 
 ** Dashboards for apps, servers, and server groups
 ** Visibility into usage and performance metrics
