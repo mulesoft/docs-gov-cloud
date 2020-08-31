@@ -8,6 +8,8 @@ MuleSoft Government Cloud supports the deployment of standalone Mule runtime eng
 Rigorous internal security and compliance reviews were performed on services that support standalone Mule deployments in MuleSoft Government Cloud. 
 The Significant Change Request Form and updated System Security Plan were approved by our FedRAMP sponsoring agency.
 
+For FIPS compliance, Mule 4 agent version 2.4.9 or later is required.
+
 Standalone Mule support enables federal, state, and local government customers to deploy Mules inside their private cloud or 
 on-premises environment and manage them using the MuleSoft Government Cloud control plane. Key features include:
 
