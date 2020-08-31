@@ -34,7 +34,6 @@ on-premises environment and manage them using the MuleSoft Government Cloud cont
 
 The following Mule versions are supported for standalone Mule support in MuleSoft Government Cloud:
 
-* 4.0.x
 * 4.1.x
 * 4.2.x
 * 4.3.x
