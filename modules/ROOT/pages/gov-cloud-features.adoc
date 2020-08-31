@@ -12,10 +12,7 @@ MuleSoft Government Cloud supports Mule runtime engine v3.9 and later, with some
 ** Mule 3: v1.12.0 and later (Supported only for cloud deployments)
 ** Mule 4: v2.2.0 and later
 
-* For FIPS compliance, Mule 4 agent version 2.4.9 or later is required.
-
 For more information about creating servers with FIPS support, refer to xref:runtime-manager::servers-create.adoc[Add Servers to Runtime Manager].
-
 
 By default, Mule runtime engine is configured to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support] for additional information.
 
