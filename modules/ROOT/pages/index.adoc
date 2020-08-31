@@ -10,7 +10,7 @@ Your agency might already use Anypoint Platform on-premises to build application
 With MuleSoft managing the Anypoint Platform infrastructure, your IT teams can focus on designing integrations. You can manage and monitor all government integration assets from a single secure, cloud-based management console.
 
 [IMPORTANT]
-MuleSoft Government Cloud deployment permits deployment of Mule runtime engines into an on-premises environment (standalone Mules). Standalone Mules, and
+MuleSoft Government Cloud deployment permits deployment of Mule runtime engine instances into an on-premises environment (standalone Mule instances). Standalone Mule instances, and
 MuleSoft support for standalone Mules, are outside the scope of FedRAMP. The customer is responsible for ensuring that all data shared with Salesforce complies
 with any and all data and information protection policies, requirements, and standards. Review the MuleSoft System Security Plan for FedRAMP scope.
 
