@@ -5,7 +5,14 @@ endif::[]
 
 MuleSoft Government Cloud includes the full functionality of the Anypoint Platform runtime plane (services and Mule runtime engine) and a subset of the Anypoint Platform control plane (browser-based management of APIs and Mule runtime engine instances) functionality. Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
 
-MuleSoft Government Cloud supports Mule runtime engine v3.9 and later.
+MuleSoft Government Cloud supports Mule runtime engine v3.9 and later, with some restrictions:
+
+* Because MuleSoft Government Cloud does not support Mule agents with self-signed certificates, specific versions of Mule agents are required:
+
+** Mule 3: v1.12.0 and later (supported only for cloud deployments)
+** Mule 4: v2.2.0 and later
+
+For more information about creating servers with FIPS support, refer to xref:runtime-manager::servers-create.adoc[Add Servers to Runtime Manager].
 
 By default, Mule runtime engine is configured to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support] for additional information.
 
@@ -25,10 +32,14 @@ Although Anypoint Studio is not part of Government Cloud, you can use Anypoint S
 ** xref:apikit::overview-4.adoc[APIKit]
 * Management Center
 ** xref:access-management::index.adoc[Anypoint Access Management]
++
+[NOTE]
+Some items displayed in the Access Management UI, such as API alerts and analytics information, cannot be accessed or configured.
 ** xref:object-store::osv2-guide.adoc[Object Store]
 ** xref:api-manager::latest-overview-concept.adoc[API Manager]
 ** xref:runtime-manager::index.adoc[Runtime Manager]
 ** xref:runtime-manager::cloudhub.adoc[CloudHub]
+* xref:gov-cloud-standalone.adoc[Standalone Mule Support]
 
 The following products are not currently supported:
 
