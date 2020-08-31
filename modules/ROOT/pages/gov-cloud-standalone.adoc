@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-MuleSoft Government Cloud deployment permits deployment of Mule runtime engines into an on-premises environment (standalone Mules). Standalone Mules, and
+MuleSoft Government Cloud deployment permits deployment of Mule runtime engine instances into an on-premises environment (standalone Mule instances). Standalone Mule instances, and
 MuleSoft support for standalone Mules, are outside the scope of FedRAMP. The customer is responsible for ensuring that all data shared with Salesforce complies
 with any and all data and information protection policies, requirements, and standards. Review the MuleSoft System Security Plan for FedRAMP scope.
 
@@ -22,13 +22,13 @@ on-premises environment and manage them using the MuleSoft Government Cloud cont
 ** Integration with continuous deployment pipelines
 ** xref:runtime-manager::index.adoc[Anypoint Runtime Manager] capabilities
 
-* Anypoint Runtime Manager Monitoring
+* Anypoint Runtime Manager monitoring
 
 ** Dashboards for apps, servers, and server groups
 ** Visibility into usage and performance metrics
 ** Email alerts and notifications
 ** Performance metrics for flows
-** xref:runtime-manager::monitoring.adoc[Monitor Applications and Servers] 
+** xref:runtime-manager::monitoring.adoc[Ability to Monitor Applications and Servers] 
 
 == Mule Version Support
 
