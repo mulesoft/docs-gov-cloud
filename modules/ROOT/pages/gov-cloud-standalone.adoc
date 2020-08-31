@@ -39,7 +39,4 @@ The following Mule versions are supported for standalone Mule support in MuleSof
 * 4.2.x
 * 4.3.x
 
-== Standalone Mules and FedRAMP boundary
-<<fill this in>>
-
 To get started, refer to the xref:runtime-manager::index.adoc[Anypoint Runtime Manager] documentation.
