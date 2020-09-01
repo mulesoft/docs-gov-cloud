@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 MuleSoft Government Cloud deployment permits deployment of Mule runtime engine instances into an on-premises environment (standalone Mule instances). Standalone Mule instances, and
-MuleSoft support for standalone Mules, are outside the scope of FedRAMP. The customer is responsible for ensuring that all data shared with Salesforce complies
+MuleSoft support for standalone Mule instances, are outside the scope of FedRAMP. The customer is responsible for ensuring that all data shared with Salesforce complies
 with any and all data and information protection policies, requirements, and standards. Review the MuleSoft System Security Plan for FedRAMP scope.
 
 Rigorous internal security and compliance reviews were performed on services that support standalone Mule deployments in MuleSoft Government Cloud. 
