@@ -16,7 +16,7 @@ For more information about creating servers with FIPS support, refer to xref:run
 
 By default, Mule runtime engine is configured to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support] for additional information.
 
-Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications to deploy in Government Cloud.
+Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications and then manually deploy them to Government Cloud.
 
 * xref:design-center::index.adoc[Design Center]
 
