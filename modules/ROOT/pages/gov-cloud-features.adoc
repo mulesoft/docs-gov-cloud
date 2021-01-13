@@ -30,6 +30,12 @@ Although Anypoint Studio is not part of Government Cloud, you can use Anypoint S
 ** xref:exchange::about-documenting-an-api.adoc[API Notebooks]
 ** xref:munit::index.adoc[MUnit]
 ** xref:apikit::overview-4.adoc[APIKit]
+* xref:api-community-manager::index.adoc[API Community Manager]
+** xref:api-community-manager::brand-intro.adoc[Brand and Customize Your API Community]
+** xref:api-community-manager::publish-apis.adoc[Publish APIs]
+** xref:api-community-manager::publish-content.adoc[Publish Content and CMS Articles]
+** xref:api-community-manager::moderate-forums.adoc[Moderate Forums]
+** xref:api-community-manager::client-apps-contracts.adoc[Manage Client Applications and Contracts]
 * Management Center
 ** xref:access-management::index.adoc[Anypoint Access Management]
 +
