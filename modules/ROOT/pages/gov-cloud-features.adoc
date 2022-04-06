@@ -45,15 +45,15 @@ Some items displayed in the Access Management UI, such as API alerts and analyti
 ** xref:api-manager::latest-overview-concept.adoc[API Manager]
 ** xref:runtime-manager::index.adoc[Runtime Manager]
 ** xref:runtime-manager::cloudhub.adoc[CloudHub]
+** xref:monitoring::index.adoc[Anypoint Monitoring]
+** xref:visualizer::index.adoc[Anypoint Visualizer]
 * xref:gov-cloud-standalone.adoc[Standalone Mule Support]
 
 The following products are not currently supported:
 
 * xref:api-manager::analytics-landing-page.adoc[Anypoint Analytics]
-* xref:monitoring::index.adoc[Anypoint Monitoring]
 * xref:mq::index.adoc[Anypoint MQ]
 * xref:anypoint-security::index.adoc[Anypoint Security]
-* xref:visualizer::index.adoc[Anypoint Visualizer]
 * xref:data-gateway::index.adoc[API Data Gateway]
 
 For a detailed list of components and support information for each component by control plane, refer to the xref:general::intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
