@@ -11,7 +11,7 @@ MuleSoft Government Cloud meets all FedRAMP security and compliance standards. F
 to security assessment, authorization, and continuous monitoring for cloud products and services used by the 
 U.S. government. For additional information, refer to https://marketplace.fedramp.gov/#/product/mulesoft-government-cloud?sort=productName[MuleSoft Government Cloud FedRAMP Authorization].
 
-Mule 4 connectors that are verified for FIPS compliance can be found in Anypoint Exchange at https://www.anypoint.mulesoft.com/exchange/?search=tag%3A%22fips-140-verified%22&type=connector&type=extension[Assets provided by MuleSoft].
+Mule 4 connectors that are verified for FIPS compliance can be found in Anypoint Exchange at https://anypoint.mulesoft.com/exchange/?search=tag%3A%22fips-140-verified%22&type=connector&type=extension[Assets provided by MuleSoft].
 
 The following modules are FIPS compliant:	
 
