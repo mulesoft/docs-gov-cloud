@@ -124,10 +124,13 @@ See the xref:gov-cloud-standalone.adoc[Standalone Mule Support documentation] fo
 
 The following products are not currently supported:
 
-* xref:api-manager::analytics-landing-page.adoc[Anypoint Analytics]
-* xref:mq::index.adoc[Anypoint MQ]
-* xref:anypoint-security::index.adoc[Anypoint Security]
-* xref:data-gateway::index.adoc[API Data Gateway]
+* Anypoint Analytics
+* Anypoint MQ
+* Anypoint Security
+* API Data Gateway
+* Runtime Fabric
+* API Governance
+* Anypoint Flex Gateway
 
 === Control Plane Hosting Options
 
