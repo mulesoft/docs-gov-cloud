@@ -68,7 +68,7 @@ See the xref:exchange::index.adoc[Exchange documentation] for more information.
 
 * RESTful API Modeling Language (RAML) 1.0 and 0.8 versions
 * Web Service Description Language (WSDL) 
-|xref:munit::index.adoc[MUnit] |use this testing framework to build automated tests for your integrations and APIs.
+|xref:munit::index.adoc[MUnit] |Use this testing framework to build automated tests for your integrations and APIs.
 |===
 
 === Managing API Communities
@@ -99,7 +99,7 @@ Some items displayed in the Access Management UI, such as API alerts and analyti
 |xref:object-store::osv2-guide.adoc[Object Store] |Share data and state across Mule runtime workers within a single application.
 |xref:api-manager::latest-overview-concept.adoc[API Manager] |Manage, govern, and secure the APIs you deploy to Anypoint Platform.
 |xref:runtime-manager::index.adoc[Runtime Manager]|Deploy, manage, and monitor your Mule applications in a sandbox, staging, or production environment from one central location, whether your apps are deployed in the cloud or on-premises.
-|xref:runtime-manager::cloudhub.adoc[CloudHub] |Deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on-premises applications with cloud services, and much more
+|xref:runtime-manager::cloudhub.adoc[CloudHub] |Deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on-premises applications with cloud services, and much more.
 |xref:monitoring::index.adoc[Anypoint Monitoring] |Aggregate and map metrics across systems, configure dashboards and alerts, and store and search log data at scale.
 |xref:visualizer::index.adoc[Anypoint Visualizer] |Explore your application network for architectural review, troubleshooting, and policy compliance.
 |===
