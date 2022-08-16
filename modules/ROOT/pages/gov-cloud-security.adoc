@@ -86,6 +86,6 @@ The MuleSoft Compliance and Information Security teams:
 
 == See Also
 
-* xref:gov-cloud::gov-cloud-features.adoc[Features Included in MuleSoft Government Cloud]
+* xref:index.adoc#features-included-in-government-cloud[Features Included in MuleSoft Government Cloud]
 * https://aws.amazon.com/govcloud-us/[AWS GovCloud]
 * https://www.fedramp.gov/[FedRAMP]
