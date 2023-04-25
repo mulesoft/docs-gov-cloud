@@ -1,0 +1,29 @@
+= Anypoint VPN Configuration
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Use xref:runtime-manager::vpn-about.adoc[Anypoint VPN] to create a secure connection between your MuleSoft Government Cloud deployment environment inside a Virtual Private Cloud (VPC) and your on-premises network.
+You can create multiple site-to-site VPNs if required.
+
+
+== Government Cloud IPsec Settings
+
+Anypoint VPN supports the following IPsec settings in the Government Cloud environment:
+
+* IKE version 1
+* IKE version 2 for route-based VPNs only
+* AES 128 or 256-bit encryption operating in the CBC and GCM
+* SHA-2 (256, 384, 512) hashing
+* Diffie-Hellman Phase 1 groups 14-21
+* Diffie-Hellman Phase 2 groups 14-21
+* Timeouts for IKEv1
+** IKE (Phase 1) Lifetime: 28800 seconds (8 hours)
+** IPsec (Phase 2) Lifetime: 3600 seconds (1 hour)
+* Timeouts for IKEv2
+** IKE (Phase 1) Lifetime: 28000 seconds (7 hours and 50 minutes)
+** IPsec (Phase 2) Lifetime: 3000 seconds (50 minutes)
+
+== See Also
+
+* xref:runtime-manager::vpn-about.adoc[Anypoint VPN]
