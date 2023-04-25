@@ -4,3 +4,4 @@
 * xref:gov-cloud-security.adoc[Security in Government Cloud]
 * xref:gov-cloud-account-setup.adoc[Set Up Your Government Cloud Account]
 * xref:gov-cloud-load-balancer.adoc[Dedicated Load Balancer]
+* xref:gov-cloud-anypoint-vpn.adoc[Anypoint VPN Configuration]
