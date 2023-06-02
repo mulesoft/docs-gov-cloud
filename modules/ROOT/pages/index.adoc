@@ -30,7 +30,7 @@ By default, Mule runtime engine is configured to run in FIPS-compliant mode. See
 
 Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications and then manually deploy them to Government Cloud.
 
-
+[[design-api-specs]]
 === Designing API Specifications
 
 [%header%autowidth.spread]
@@ -47,6 +47,7 @@ Although Anypoint Studio is not part of Government Cloud, you can use Anypoint S
 
 See the xref:design-center::index.adoc[Design Center documentation] for more information.
 
+[[share-discover-apis]]
 === Sharing and Discovering APIs 
 
 [%header%autowidth.spread]
@@ -59,6 +60,7 @@ See the xref:design-center::index.adoc[Design Center documentation] for more inf
 
 See the xref:exchange::index.adoc[Exchange documentation] for more information.
 
+[[build-test-apis]]
 === Building and Testing APIs
 
 [%header%autowidth.spread]
@@ -71,6 +73,7 @@ See the xref:exchange::index.adoc[Exchange documentation] for more information.
 |xref:munit::index.adoc[MUnit] |Use this testing framework to build automated tests for your integrations and APIs.
 |===
 
+[[manage-api-communities]]
 === Managing API Communities
 
 [%header%autowidth.spread]
@@ -85,6 +88,7 @@ See the xref:exchange::index.adoc[Exchange documentation] for more information.
 
 See the xref:api-community-manager::index.adoc[Community Manager documentation] for more information.
 
+[[manage-anypoint-platform]]
 === Managing Anypoint Platform 
 
 [%header%autowidth.spread,cols="2,2a"]
@@ -99,7 +103,7 @@ Some items displayed in the Access Management UI, such as API alerts and analyti
 |xref:mq::index.adoc[Anypoint MQ] | Send messages between different applications or components within an application.
 
 [NOTE]
-include::partial$mq-on-govcloud.adoc[tag=mqSupportOnGovCloud]
+include::partial$mq-in-govcloud.adoc[tag=mqSupportInGovCloud]
 
 |xref:object-store::index.adoc[Object Store] |Share data and state across Mule runtime workers within a single application.
 |xref:api-manager::latest-overview-concept.adoc[API Manager] |Manage, govern, and secure the APIs you deploy to Anypoint Platform.
@@ -108,6 +112,28 @@ include::partial$mq-on-govcloud.adoc[tag=mqSupportOnGovCloud]
 |xref:monitoring::index.adoc[Anypoint Monitoring] |Aggregate and map metrics across systems, configure dashboards and alerts, and store and search log data at scale.
 |xref:visualizer::index.adoc[Anypoint Visualizer] |Explore your application network for architectural review, troubleshooting, and policy compliance.
 |===
+
+[[mq-in-govcloud]]
+==== Anypoint MQ in MuleSoft Government Cloud
+
+The following Anypoint MQ features are not available in MuleSoft Government Cloud:
+
+* Unencrypted queues
++
+All queues are encrypted and the *Encryption* option is not available when 
+xref:mq::mq-queues.adoc#create-a-queue[creating a queue].
+* xref:mq::mq-client-apps.adoc[Client apps]
++
+Use 
+xref:mq::mq-connected-apps.adoc[Connected Apps] instead.
+* The following REST APIs in the Anypoint MQ Stats API:
++
+** https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-mq-stats/minor/1.0/console/method/%23322/[Get usage metrics for an org]
+** https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-mq-stats/minor/1.0/console/method/%23383/[Get usage metrics for an environment within an org]
++
+You can use Anypoint MQ Stats API to retrieve metrics for queues and exchanges.
+See 
+xref:mq::mq-apis.adoc#mqstatapi[Anypoint MQ Stats API].
 
 === Security in MuleSoft Government Cloud
 
