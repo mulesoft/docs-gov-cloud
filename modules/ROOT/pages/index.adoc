@@ -135,7 +135,7 @@ You can use Anypoint MQ Stats API to retrieve metrics for queues and exchanges.
 See 
 xref:mq::mq-apis.adoc#mqstatapi[Anypoint MQ Stats API].
 
-=== Security in MuleSoft Government Cloud
+== Security in MuleSoft Government Cloud
 
 MuleSoft Government Cloud meets all FedRAMP security and compliance standards, and adheres to these additional security protocols:
 
@@ -147,22 +147,22 @@ MuleSoft Government Cloud meets all FedRAMP security and compliance standards, a
 See the xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud documentation] for more information.
 
  
-=== Standalone Mule Support
+== Standalone Mule Support
 
-See the xref:gov-cloud-standalone.adoc[Standalone Mule Support documentation] for more information.
+See the xref:gov-cloud-standalone.adoc[Standalone Mule Support documentation] for information.
 
-=== Products Not Currently Supported in MuleSoft Government Cloud
+== Products Not Currently Supported in MuleSoft Government Cloud
 
 The following products are not currently supported:
 
 * Anypoint Analytics
-* Anypoint Security
 * API Data Gateway
-* Runtime Fabric
 * API Governance
 * Anypoint Flex Gateway
+* Anypoint Runtime Fabric
+* Anypoint Security
 * Anypoint Service Mesh
 
-=== Control Plane Hosting Options
+== Control Plane Hosting Options
 
 For a detailed list of components and support information for each component by control plane, refer to the xref:general::intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
