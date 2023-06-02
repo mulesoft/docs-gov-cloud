@@ -87,7 +87,7 @@ See the xref:api-community-manager::index.adoc[Community Manager documentation] 
 
 === Managing Anypoint Platform 
 
-[%header%autowidth.spread]
+[%header%autowidth.spread,cols="2,2a"]
 |===
 |Feature |Description
 |xref:access-management::index.adoc[Anypoint Access Management] a|Create Anypoint Platform accounts, configure external identity, and configure access and permissions.
@@ -96,7 +96,13 @@ See the xref:api-community-manager::index.adoc[Community Manager documentation] 
 [NOTE]
 Some items displayed in the Access Management UI, such as API alerts and analytics information, cannot be accessed or configured.
 
-|xref:object-store::osv2-guide.adoc[Object Store] |Share data and state across Mule runtime workers within a single application.
+|xref:mq::index.adoc[Anypoint MQ] | Send messages between different applications or components within an application.
+
+[NOTE]
+Some Anypoint MQ features, such as client apps and unencrypted queues, cannot be accessed or configured.
+For information, see xref:hosting-home::index.adoc#mq-on-govcloud[Anypoint MQ on MuleSoft Government Cloud].
+
+|xref:object-store::index.adoc[Object Store] |Share data and state across Mule runtime workers within a single application.
 |xref:api-manager::latest-overview-concept.adoc[API Manager] |Manage, govern, and secure the APIs you deploy to Anypoint Platform.
 |xref:runtime-manager::index.adoc[Runtime Manager]|Deploy, manage, and monitor your Mule applications in a sandbox, staging, or production environment from one central location, whether your apps are deployed in the cloud or on-premises.
 |xref:runtime-manager::cloudhub.adoc[CloudHub] |Deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on-premises applications with cloud services, and much more.
@@ -125,7 +131,6 @@ See the xref:gov-cloud-standalone.adoc[Standalone Mule Support documentation] fo
 The following products are not currently supported:
 
 * Anypoint Analytics
-* Anypoint MQ
 * Anypoint Security
 * API Data Gateway
 * Runtime Fabric
