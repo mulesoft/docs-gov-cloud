@@ -103,7 +103,7 @@ Some items displayed in the Access Management UI, such as API alerts and analyti
 |xref:mq::index.adoc[Anypoint MQ] | Send messages between different applications or components within an application.
 
 [NOTE]
-include::partial$mq-in-govcloud.adoc[tag=mqSupportInGovCloud]
+include::mq::partial$mq-in-govcloud.adoc[tag=mqSupportInGovCloud]
 
 |xref:object-store::index.adoc[Object Store] |Share data and state across Mule runtime workers within a single application.
 |xref:api-manager::latest-overview-concept.adoc[API Manager] |Manage, govern, and secure the APIs you deploy to Anypoint Platform.
