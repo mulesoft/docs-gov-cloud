@@ -30,7 +30,7 @@ By default, Mule runtime engine is configured to run in FIPS-compliant mode. See
 
 Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications and then manually deploy them to Government Cloud.
 
-
+[[design-api-specs]]
 === Designing API Specifications
 
 [%header%autowidth.spread]
@@ -42,11 +42,12 @@ Although Anypoint Studio is not part of Government Cloud, you can use Anypoint S
 * OpenAPI Specification (OAS) version 2.0 or 3.0
 * AsyncAPI 2.0
 |xref:design-center::design-create-publish-api-visual-editor.adoc[Visual API Designer] |Use API Designer’s visual API editor to scaffold API specifications in RAML 1.0 or in OAS 2.0 or 3.0 (JSON).
-|xref:design-center::design-create-publish-api-specs#documenting[API Console] |As you add descriptions in your specifications and fragments, you can view them in auto-generated, interactive documentation in the right pane of the text editor.
+|xref:design-center::design-create-publish-api-specs#documenting[API Console] |As you add descriptions in your specifications and fragments, you can view them in auto-generated, interactive documentation in the text editor.
 |===
 
 See the xref:design-center::index.adoc[Design Center documentation] for more information.
 
+[[share-discover-apis]]
 === Sharing and Discovering APIs 
 
 [%header%autowidth.spread]
@@ -59,6 +60,7 @@ See the xref:design-center::index.adoc[Design Center documentation] for more inf
 
 See the xref:exchange::index.adoc[Exchange documentation] for more information.
 
+[[build-test-apis]]
 === Building and Testing APIs
 
 [%header%autowidth.spread]
@@ -71,6 +73,7 @@ See the xref:exchange::index.adoc[Exchange documentation] for more information.
 |xref:munit::index.adoc[MUnit] |Use this testing framework to build automated tests for your integrations and APIs.
 |===
 
+[[manage-api-communities]]
 === Managing API Communities
 
 [%header%autowidth.spread]
@@ -85,9 +88,10 @@ See the xref:exchange::index.adoc[Exchange documentation] for more information.
 
 See the xref:api-community-manager::index.adoc[Community Manager documentation] for more information.
 
+[[manage-anypoint-platform]]
 === Managing Anypoint Platform 
 
-[%header%autowidth.spread]
+[%header%autowidth.spread,cols="2,2a"]
 |===
 |Feature |Description
 |xref:access-management::index.adoc[Anypoint Access Management] a|Create Anypoint Platform accounts, configure external identity, and configure access and permissions.
@@ -96,7 +100,12 @@ See the xref:api-community-manager::index.adoc[Community Manager documentation] 
 [NOTE]
 Some items displayed in the Access Management UI, such as API alerts and analytics information, cannot be accessed or configured.
 
-|xref:object-store::osv2-guide.adoc[Object Store] |Share data and state across Mule runtime workers within a single application.
+|xref:mq::index.adoc[Anypoint MQ] | Send messages between different applications or components within an application.
+
+[NOTE]
+include::mq::partial$mq-in-govcloud.adoc[tag=mqSupportInGovCloud]
+
+|xref:object-store::index.adoc[Object Store] |Share data and state across Mule runtime workers within a single application.
 |xref:api-manager::latest-overview-concept.adoc[API Manager] |Manage, govern, and secure the APIs you deploy to Anypoint Platform.
 |xref:runtime-manager::index.adoc[Runtime Manager]|Deploy, manage, and monitor your Mule applications in a sandbox, staging, or production environment from one central location, whether your apps are deployed in the cloud or on-premises.
 |xref:runtime-manager::cloudhub.adoc[CloudHub] |Deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on-premises applications with cloud services, and much more.
@@ -104,7 +113,9 @@ Some items displayed in the Access Management UI, such as API alerts and analyti
 |xref:visualizer::index.adoc[Anypoint Visualizer] |Explore your application network for architectural review, troubleshooting, and policy compliance.
 |===
 
-=== Security in MuleSoft Government Cloud
+
+
+== Security in MuleSoft Government Cloud
 
 MuleSoft Government Cloud meets all FedRAMP security and compliance standards, and adheres to these additional security protocols:
 
@@ -116,23 +127,22 @@ MuleSoft Government Cloud meets all FedRAMP security and compliance standards, a
 See the xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud documentation] for more information.
 
  
-=== Standalone Mule Support
+== Standalone Mule Support
 
-See the xref:gov-cloud-standalone.adoc[Standalone Mule Support documentation] for more information.
+See the xref:gov-cloud-standalone.adoc[Standalone Mule Support documentation] for information.
 
-=== Products Not Currently Supported in MuleSoft Government Cloud
+== Products Not Currently Supported in MuleSoft Government Cloud
 
 The following products are not currently supported:
 
 * Anypoint Analytics
-* Anypoint MQ
-* Anypoint Security
 * API Data Gateway
-* Runtime Fabric
 * API Governance
 * Anypoint Flex Gateway
+* Anypoint Runtime Fabric
+* Anypoint Security
 * Anypoint Service Mesh
 
-=== Control Plane Hosting Options
+== Control Plane Hosting Options
 
 For a detailed list of components and support information for each component by control plane, refer to the xref:general::intro-platform-hosting#support-matrix-for-control-plane-hosting-options[Support Matrix for Control Plane Hosting Options].
