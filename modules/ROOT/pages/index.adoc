@@ -15,7 +15,12 @@ with any and all data and information protection policies, requirements, and sta
 
 == Features Included in Government Cloud
 
-MuleSoft Government Cloud includes the full functionality of the Anypoint Platform runtime plane (services and Mule runtime engine) and a subset of the Anypoint Platform control plane (browser-based management of APIs and Mule runtime engine instances) functionality. Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
+MuleSoft Government Cloud includes the full functionality of the Anypoint Platform runtime plane (services and Mule runtime engine) and a subset of the Anypoint Platform control plane (browser-based management of APIs and Mule runtime engine instances) functionality.
+
+Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
+
+[NOTE]
+The feature to xref:api-manager::proxy-latest-concept.adoc[deploy an API proxy] to hybrid targets is not available in Government Cloud.
 
 MuleSoft Government Cloud supports Mule runtime engine v3.9 and later, with some restrictions:
 
