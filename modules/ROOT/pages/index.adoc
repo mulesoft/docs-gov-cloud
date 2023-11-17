@@ -24,7 +24,7 @@ The feature to xref:api-manager::proxy-latest-concept.adoc[deploy an API proxy] 
 
 MuleSoft Government Cloud supports Mule runtime engine v3.9 and later, with some restrictions:
 
-* Government Cloud supports the Mule 4.5 LTS release channel. The Mule 4.5 Edge release channel is not supported, as it is not FedRAMP approved. For more information, visit xref:mule-runtime::lts-edge-release-cadence.adoc[].
+* Government Cloud supports the Mule 4.5 LTS release channel. The Mule 4.5 Edge release channel is not supported, as it is not FedRAMP approved. For more information, visit xref:release-notes::mule-runtime/lts-edge-release-cadence.adoc[].
 
 * Because MuleSoft Government Cloud does not support Mule agents with self-signed certificates, specific versions of Mule agents are required:
 

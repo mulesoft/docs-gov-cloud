@@ -40,6 +40,6 @@ The following Mule versions are supported for standalone Mule support in MuleSof
 * 4.4.x
 * 4.5.x (LTS only)
 +
-Fore more information on the Mule 4.5 LTS release model, visit xref:mule-runtime::lts-edge-release-cadence.adoc[].
+Fore more information on the Mule 4.5 LTS release model, visit xref:release-notes::mule-runtime/lts-edge-release-cadence.adoc[].
 
 To get started, refer to the xref:runtime-manager::index.adoc[Anypoint Runtime Manager] documentation.
