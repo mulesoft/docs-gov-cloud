@@ -102,10 +102,6 @@ See the xref:api-community-manager::index.adoc[Community Manager documentation] 
 |===
 |Feature |Description
 |xref:access-management::index.adoc[Anypoint Access Management] a|Create Anypoint Platform accounts, configure external identity, and configure access and permissions.
-{sp}
-{sp}
-[NOTE]
-Some items displayed in the Access Management UI, such as API alerts and analytics information, cannot be accessed or configured.
 
 |xref:mq::index.adoc[Anypoint MQ] | Send messages between different applications or components within an application.
 
