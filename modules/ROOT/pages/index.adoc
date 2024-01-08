@@ -73,7 +73,7 @@ See the xref:exchange::index.adoc[Exchange documentation] for more information.
 [%header%autowidth.spread]
 |===
 |Feature |Description
-|xref:apikit::overview-4.adoc[APIKit] a|Use APIkit to build Mule REST or SOAP APIs in one of the following modeling languages:
+|xref:apikit::overview-4.adoc[APIkit] a|Use APIkit to build Mule REST or SOAP APIs in one of the following modeling languages:
 
 * RESTful API Modeling Language (RAML) 1.0 and 0.8 versions
 * Web Service Description Language (WSDL) 
