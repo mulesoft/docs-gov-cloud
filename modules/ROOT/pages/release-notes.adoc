@@ -1,0 +1,1 @@
+include::release-notes::partial$gov-cloud/gov-cloud-rn-landing-page.adoc[]

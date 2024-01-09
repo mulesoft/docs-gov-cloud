@@ -1,6 +1,7 @@
 .xref:index.adoc[Government Cloud]
 * xref:index.adoc[Government Cloud Overview]
  ** xref:gov-cloud-standalone.adoc[Standalone Mule Support]
+* xref:release-notes.adoc[Release Notes]
 * xref:gov-cloud-security.adoc[Security in Government Cloud]
 * xref:gov-cloud-account-setup.adoc[Set Up Your Government Cloud Account]
 * xref:gov-cloud-load-balancer.adoc[Dedicated Load Balancer]
