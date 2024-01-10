@@ -84,6 +84,32 @@ The MuleSoft Compliance and Information Security teams:
 * Maintain security policies related to operations, data security, passwords and credentials, facilities and network security, and secure connectivity.
 * Perform internal security audits to ensure compliance with security policies.
 
+
+== Allowing Trusted Domains for API Platform Proxies
+
+Every HTTP request you make to an external resource goes through the API Console Proxy. 
+
+By default, proxy requests are blocked for external domains on authenticated requests. For security reasons, you must register the domain as an allowed domain in Anypoint Platform.
+
+To add a new domain:
+
+. Log in to Anypoint Platform using an account that has the Organization Administrator permission.
+
+. In the navigation bar, click *Access Management*.
+
+. Click *Trusted domains*.
+
+. Click *Add domain*.
++
+The domain must not match an existing domain, must not be a domain or subdomain of MuleSoft or Anypoint Platform, and must be written in the format `exampledomain.com`. 
++
+[NOTE] 
+Regular expressions are not supported.
+
+. Type the domain name and click *Add domain*.
++
+The domain is added to your list of trusted domains. You are redirected to the trusted domains page, where you can edit or delete your domains. If you register a domain on a parent organization, the domain is allowlisted for all of your business groups.
+
 == See Also
 
 * xref:index.adoc#features-included-in-government-cloud[Features Included in MuleSoft Government Cloud]
