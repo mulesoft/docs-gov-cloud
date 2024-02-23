@@ -139,6 +139,7 @@ See the xref:gov-cloud-standalone.adoc[Standalone Mule Support documentation] fo
 The following products are not currently supported:
 
 * Anypoint Analytics
+* Anypoint Code Builder
 * API Data Gateway
 * API Governance
 * Anypoint Flex Gateway
