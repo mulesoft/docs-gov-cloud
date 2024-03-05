@@ -31,10 +31,6 @@ MuleSoft Government Cloud supports Mule runtime engine v3.9 and later, with some
 ** Mule 3: v1.12.0 and later (supported only for cloud deployments)
 ** Mule 4: v2.2.0 and later
 
-For more information about creating servers with FIPS support, refer to xref:runtime-manager::servers-create.adoc[Add Servers to Runtime Manager].
-
-By default, Mule runtime engine is configured to run in FIPS-compliant mode. See xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support] for additional information.
-
 Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications and then manually deploy them to Government Cloud.
 
 [[design-api-specs]]
