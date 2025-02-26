@@ -22,7 +22,7 @@ Government Cloud supports the full API-led connectivity methodology and end-to-e
 [NOTE]
 The feature to xref:api-manager::proxy-latest-concept.adoc[deploy an API proxy] to hybrid targets is not available in Government Cloud.
 
-MuleSoft Government Cloud supports Mule runtime engine v3.9 and later, with some restrictions:
+MuleSoft Government Cloud supports Mule runtime engine 4.3, 4.4, and 4.6 with some restrictions:
 
 * Government Cloud supports the Mule runtime engine LTS release channel. The Mule runtime engine Edge release channel is not supported, as it is not FedRAMP-approved. For more information, visit xref:release-notes::mule-runtime/lts-edge-release-cadence.adoc[].
 
@@ -31,6 +31,9 @@ MuleSoft Government Cloud supports Mule runtime engine v3.9 and later, with some
 ** Mule 3: v1.12.0 and later (supported only for cloud deployments)
 ** Mule 4: v2.2.0 and later
 ** Mule 4.6
+
+[NOTE]
+Mule runtime 4.3 has entered https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/Agreements/versioning-back-support-policy.pdf[External Support]. 
 
 MuleSoft Government Cloud supports Java 17. For more information on Java support, see xref:general::java-support.adoc[].
 
