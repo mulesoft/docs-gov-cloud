@@ -103,8 +103,7 @@ To add a new domain:
 +
 The domain must not match an existing domain, must not be a domain or subdomain of MuleSoft or Anypoint Platform, and must be written in the format `exampledomain.com`. 
 +
-[NOTE] 
-Regular expressions are not supported.
+NOTE: Regular expressions are not supported.
 
 . Type the domain name and click *Add domain*.
 +
