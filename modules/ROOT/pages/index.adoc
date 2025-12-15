@@ -107,6 +107,8 @@ See the xref:api-community-manager::index.adoc[Community Manager documentation] 
 
 [NOTE]
 include::access-management::partial$include-gov-cloud-note.adoc[tag=govcloud]
+[NOTE]
+The Salesforce menu option in Access Management is not available in Government Cloud.
 
 |xref:mq::index.adoc[Anypoint MQ] | Send messages between different applications or components within an application.
 
