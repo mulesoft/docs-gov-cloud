@@ -33,7 +33,7 @@ MuleSoft Government Cloud supports Mule runtime engine 4.3, 4.4, 4.6, and 4.9 wi
 ** Mule 4.6
 
 [NOTE]
-Mule runtime 4.3 has entered https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/Agreements/versioning-back-support-policy.pdf[External Support]. 
+Mule runtime 4.3 has entered https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Agreements/versioning-back-support-policy.pdf[External Support]. 
 
 MuleSoft Government Cloud supports Java 17. For more information on Java support, see xref:general::java-support.adoc[].
 
