@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-FedRAMP Revision 5 introduces 10 Recommended Secure Configuration (FRR-RSC) requirements that cloud service providers address to help federal agencies secure their cloud environments. MuleSoft Government Cloud aligns with these requirements and provides FedRAMP-specific documentation guidance for MuleSoft services, as well as access to OSCAL formatted documents for consumption into your own tooling. In the platform-as-a-service (PaaS) model, MuleSoft is the provider platform; and you administer your organizations, users, roles, and applications. 
+Federal Risk and Authorization Management Program (FedRAMP) Revision 5 introduces 10 Recommended Secure Configuration (FRR-RSC) requirements that cloud service providers address to help federal agencies secure their cloud environments. MuleSoft Government Cloud aligns with these requirements and provides FedRAMP-specific documentation guidance for MuleSoft services, as well as access to Open Security Controls Assessment Language (OSCAL) formatted documents for consumption into your own tooling. In the platform-as-a-service (PaaS) model, MuleSoft is the provider platform; and you administer your organizations, users, roles, and applications. 
 
 * Coverage: All Administrative guidance requirements +
 * Requirements: All 10 FRR-RSC controls
@@ -12,7 +12,7 @@ This table lists each FRR-RSC control, how it applies to MuleSoft Government Clo
 
 == FRR-RSC Controls
 
-[cols="1,1,3,4", options="header", width="100%"]
+[cols="1,1,3a,4a", options="header", width="100%"]
 |===
 |Control
 |Requirement
@@ -21,14 +21,13 @@ This table lists each FRR-RSC control, how it applies to MuleSoft Government Clo
 
 |FRR-RSC-01
 |Top-Level Administrative Accounts Guidance
-|MuleSoft creates and maintains documentation guidance that includes instructions on how to securely access, configure, operate, and decommission top-level administrative accounts that control enterprise access to the entire cloud service offering, and explains how MuleSoft names and refers to those accounts in the offering.
+|MuleSoft creates and maintains documentation that describes how to securely access, configure, operate, and decommission top-level administrative accounts that control enterprise access to the entire cloud service offering, and how MuleSoft names and refers to those accounts in the offering.
 
 |`Applicable` +
-In this PaaS model, MuleSoft fulfills this requirement. For you, "top-level" means organization-level administrator. +
 
-MuleSoft documents how to create accounts, manage access, and use organization-level admin—including the "Organization Administrator" permission, "organization owner," and "Organization Administrators" role—as well as access (sign-in, SSO, MFA), configuration (users, business groups, roles), operation (managing users, roles, permissions), and decommissioning (deleting accounts, migrating owners). The documentation explicitly names the "Organization Administrators," "organization owner," and "Organization Administrator permission." 
+MuleSoft fulfills this requirement in this PaaS model. MuleSoft documents how to create accounts, manage access, and use organization-level admin—including the "Organization Administrator" permission, "organization owner," and "Organization Administrators" role, as well as access (sign-in, single sign-on (SSO), multi-factor authentication (MFA)), configuration (users, business groups, roles), operation (managing users, roles, permissions), and decommissioning (deleting accounts, migrating owners). The documentation explicitly names the "Organization Administrators," "organization owner," and "Organization Administrator permission." 
 
-For details, refer to:
+For details, refer to: 
 
 * xref:access-management::index.adoc[Access Management Overview]
 * xref:access-management::managing-your-account.adoc[Managing your Anypoint Platform Account]
@@ -37,11 +36,12 @@ For details, refer to:
 
 |FRR-RSC-02
 |Administrative Security Settings
-|MuleSoft creates and maintains documentation guidance that explains security-related settings that can be operated only by top-level administrative accounts and their security implications.
-|`Applicable`+
-MuleSoft documents security-relevant settings that only top-level (organization) administrators can change. MuleSoft documentation covers security-related actions that require the Organization Administrator (or equivalent) role—for example, trusted domains (Gov Cloud security), user and role management, MFA and IdP configuration, client applications, VPC and load balancer permissions, and organization details. The security and Access Management documentation describes these implications (for example, trusted domains, MFA). 
+|MuleSoft creates and maintains documentation that explains security-related settings that can be operated only by top-level administrative accounts and their security implications.
+|`Applicable` +
 
-For details, refer to:
+MuleSoft documents security-relevant settings that only top-level (organization) administrators can change. MuleSoft documentation covers security-related actions that require the Organization Administrator (or equivalent) role—for example, trusted domains (Gov Cloud security), user and role management, MFA and identity provider (IDP) configuration, client applications, virtual private cloud (VPC) and load balancer permissions, and organization details. The security and Access Management documentation describes these implications (for example, trusted domains, MFA). 
+
+For details, refer to: 
 
 * xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud]
 * xref:access-management::index.adoc[Access Management Overview] (Organization Administrator Configurations)
@@ -49,23 +49,24 @@ For details, refer to:
 
 |FRR-RSC-03
 |Privileged Accounts Security
-|MuleSoft creates and maintains guidance that explains security-related settings that can be operated only by privileged accounts and their security implications.
+|MuleSoft creates and maintains documentation that explains security-related settings that can be operated only by privileged accounts and their security implications.
 |`Applicable` +
-MuleSoft documents privileged (non–top-level) roles and their security-relevant capabilities. The documentation lists default roles (for example, API Versions Owner, CloudHub Admin, Exchange Administrators, Audit Log Viewers) and their permission scopes, and explains custom roles. It describes security implications so you can understand what each role can do and how to manage privileged-account settings. 
 
-For details, refer to:
+MuleSoft documents privileged (non–top-level) roles and their security-relevant capabilities. MuleSoft documentation lists default roles (for example, API Versions Owner, CloudHub Admin, Exchange Administrators, Audit Log Viewers) and their permission scopes, and explains custom roles. MuleSoft documentation describes security implications so you can understand what each role can do and how to manage privileged-account settings. 
+
+For details, refer to: 
 
 * xref:access-management::roles.adoc[Using Roles to Manage Permissions]
 * xref:access-management::managing-permissions.adoc[Managing Permissions]
 
-
 |FRR-RSC-04
 |Secure Defaults on Provisioning
-|MuleSoft sets all settings to their recommended secure defaults for top-level administrative accounts and privileged accounts when initially provisioned.
-| `Applicable` +
-MuleSoft sets platform defaults; you provision organizations and users and assign roles. Platform-level secure defaults include Government Cloud requirement for 2FA for all users, password rules (length, complexity, reuse), and documented FIPS, TLS, and secure hosting. When you create an organization or business group, the platform creates default roles automatically. You are responsible for assigning users to roles and enabling MFA or IdP per your policy. You can align admin and privileged accounts with recommended secure defaults by following MuleSoft guidance when provisioning. 
+|MuleSoft applies recommended secure defaults for top-level administrative accounts and privileged accounts when they are initially provisioned.
+|`Applicable` +
 
-For details, refer to:
+MuleSoft sets platform-level secure defaults (for example, Government Cloud requirement for two-factor authentication (2FA) for all users, password rules, documented Federal Information Processing Standards (FIPS), Transport Layer Security (TLS), and secure hosting). MuleSoft creates default roles automatically when you create an organization or business group. You provision organizations and users, assign roles, and enable MFA or IdP per your policy. You can align admin and privileged accounts with recommended secure defaults by following MuleSoft guidance when provisioning. 
+
+For details, refer to: 
 
 * xref:index.adoc[Government Cloud Overview]
 * xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud]
@@ -73,21 +74,21 @@ For details, refer to:
 * xref:access-management::multi-factor-authentication.adoc[Multi-factor Authentication]
 * xref:access-management::managing-your-account.adoc[Managing your Anypoint Platform Account]
 
-
-
 |FRR-RSC-05
 |Comparison Capability
 |MuleSoft offers the capability to compare all current settings for top-level administrative accounts and privileged accounts to the recommended secure defaults.
 |`Not applicable` +
-In this PaaS model, there is no built-in capability to compare current settings to recommended secure defaults for admin or privileged accounts. You can view current roles and permissions in the UI and via the Access Management API. No MuleSoft feature compares current configuration to a recommended secure default baseline for those accounts. Fulfilling the intent (for example, comparing to internal baselines) is your responsibility; you can use exported data or internal processes.
+
+MuleSoft doesn't provide a built-in capability to compare current settings to recommended secure defaults for admin or privileged accounts in this PaaS model. You can view current roles and permissions in the UI and via the Access Management API. You are responsible for fulfilling the intent (for example, comparing to internal baselines) using exported data or internal processes.
 
 |FRR-RSC-06
 |Export Capability
 |MuleSoft offers the capability to export all security settings in a machine-readable format.
 |`Partially applicable` +
-You can export or retrieve some security-relevant data programmatically, but no single export all security settings download exists. The Access Management API provides programmatic access to organizations, business groups, users, roles, and permissions so you can export or script identity and access security settings. API Manager supports export of API instances (ZIP) for API configuration, not a full all security settings export. MuleSoft doesn't offer a single machine-readable export of all security settings (IAM, policies, audit config, and so on) in one format. You can use the APIs to build your own export. 
 
-For details, refer to:
+MuleSoft provides programmatic access to some security-relevant data via the Access Management API (organizations, business groups, users, roles, permissions) and API Manager (export of API instances). MuleSoft doesn't offer a single machine-readable export of all security settings (identity and access management (IAM), policies, audit config, and so on) in one format. You can use the APIs to export or script identity and access security settings and to build your own export. 
+
+For details, refer to: 
 
 * xref:access-management::index.adoc[Access Management Overview]
 * https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/11270/versions/11646/pages/11244[Access Management API Portal]
@@ -97,25 +98,29 @@ For details, refer to:
 |API Capability
 |MuleSoft offers the capability to view and adjust security settings via an API or similar capability.
 |`Applicable` +
-You can view and adjust security-relevant settings via API. The Access Management API supports programmatic access to user and client management, organizations, business groups, roles, and permissions. API Manager and related APIs support API and config management. The platform satisfies this requirement for the access and API-management settings it exposes. 
 
-For details, refer to:
+MuleSoft supports viewing and adjusting security-relevant settings via API. MuleSoft provides the Access Management API for programmatic access to user and client management, organizations, business groups, roles, and permissions. MuleSoft provides API Manager and related APIs for API and config management. The platform satisfies this requirement for the access and API-management settings it exposes. 
+
+For details, refer to: 
 
 * xref:access-management::index.adoc[Access Management Overview]
 * https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/11270/versions/11646/pages/11244[Access Management API Portal]
 
 |FRR-RSC-08
 |Machine-Readable Guidance
-|MuleSoft provides recommended secure configuration guidance in a machine-readable format that can be used by customers or third-party tools to compare against current settings.
-|MuleSoft doesn't currently provide a machine-readable secure-configuration baseline (for example, SCAP, OVAL, or JSON schema) for admin or privileged account settings.
+|MuleSoft provides recommended secure configuration guidance in a machine-readable format that customers or third-party tools can use to compare against current settings.
+|`Not applicable` +
+
+MuleSoft does not currently provide a machine-readable secure-configuration baseline (for example, Security Content Automation Protocol (SCAP), Open Vulnerability and Assessment Language (OVAL), or JSON schema) for admin or privileged account settings.
 
 |FRR-RSC-09
 |Publish Guidance
 |MuleSoft makes recommended secure configuration guidance available publicly.
 |`Applicable` +
-MuleSoft makes recommended secure-configuration and operational documentationguidance publicly available. MuleSoft publishes Government Cloud and security guidance publicly, including Government Cloud overview, security (FedRAMP, FIPS, TLS, NIST, CIS), Access Management, roles, permissions, MFA, audit logging, and account lifecycle. 
+MuleSoft makes recommended secure-configuration and operational documentation guidance publicly available. MuleSoft publishes Government Cloud and security guidance publicly, including Government Cloud overview, security (FedRAMP, FIPS, TLS, National Institute of Standards and Technology (NIST), Center for Internet Security (CIS)), Access Management, roles, permissions, MFA, audit logging, and account lifecycle. 
 
-For details, refer to:
+For details, refer to: 
+
 * xref:index.adoc[Government Cloud Overview]
 * xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud]
 * xref:access-management::index.adoc[Access Management Overview]
@@ -125,11 +130,13 @@ For details, refer to:
 |Versioning and Release History
 |MuleSoft provides versioning and a release history for recommended secure default settings for top-level administrative accounts and privileged accounts as they are adjusted over time.
 |`Applicable` +
-MuleSoft provides product and documentation versioning, but doesn't maintain a dedicated release history for recommended secure default settings for admin or privileged accounts. For details, refer to xref:release-notes::quick-refs/by-date-index.adoc[MuleSoft Release Notes].
+
+MuleSoft provides product and documentation versioning. MuleSoft does not maintain a dedicated release history for recommended secure default settings for admin or privileged accounts. 
+
+For details, refer to xref:release-notes::quick-refs/by-date-index.adoc[MuleSoft Release Notes].
 |===
 
 == See Also
 
 * xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud]
 * xref:index.adoc[Government Cloud Overview]
-* xref:index.adoc[MuleSoft Government Cloud documentation]
