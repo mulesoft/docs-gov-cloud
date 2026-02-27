@@ -95,7 +95,7 @@ For details, refer to:
 
 * xref:access-management::index.adoc[Access Management Overview]
 * https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/11270/versions/11646/pages/11244[Access Management API Portal]
-* xref:api-manager::export-api-latest-task.adoc[Exporting API Instance]
+* xref:api-manager::export-api-latest-task.adoc[Exporting an API Instance]
 
 |FRR-RSC-07
 |API Capability
