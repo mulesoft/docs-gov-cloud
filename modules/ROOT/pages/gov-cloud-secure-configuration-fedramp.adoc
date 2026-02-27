@@ -102,7 +102,7 @@ For details, refer to:
 |Providers should offer the capability to view and adjust security settings via an API or similar capability.
 |`Applicable` +
 
-MuleSoft supports viewing and adjusting security-relevant settings via API. MuleSoft provides the Access Management API for programmatic access to user and client management, organizations, business groups, roles, and permissions. MuleSoft provides API Manager and related APIs for API and config management. The platform satisfies this requirement for the access and API-management settings it exposes. 
+MuleSoft supports viewing and adjusting security-relevant settings via API. MuleSoft provides the Access Management API for programmatic access to user and client management, organizations, business groups, roles, and permissions. MuleSoft provides API Manager and related APIs for API and configuration management. The platform satisfies this requirement for the access and API-management settings it exposes. 
 
 For details, refer to: 
 
