@@ -42,7 +42,7 @@ For details, refer to:
 |Providers must create and maintain guidance that explains security-related settings that can be operated only by top-level administrative accounts and their security implications.
 |`Applicable` +
 
-MuleSoft documents security-relevant settings that only top-level (organization) administrators can change. MuleSoft documentation covers security-related actions that require the Organization Administrator (or equivalent) role—for example, trusted domains (Gov Cloud security), user and role management, MFA and identity provider (IDP) configuration, client applications, virtual private cloud (VPC) and load balancer permissions, and organization details. The security and Access Management documentation describes these implications (for example, trusted domains, MFA). 
+MuleSoft documents security-relevant settings that only top-level (organization) administrators can change. MuleSoft documentation covers security-related actions that require the Organization Administrators (or equivalent) role—for example, trusted domains (Gov Cloud security), user and role management, MFA and identity provider (IdP) configuration, client applications, virtual private cloud (VPC) and load balancer permissions, and organization details. The security and Access Management documentation describes these implications (for example, trusted domains, MFA). 
 
 For details, refer to: 
 
