@@ -80,14 +80,14 @@ For details, refer to:
 |FRR-RSC-05
 |Comparison Capability
 |Providers should offer the capability to compare all current settings for top-level administrative accounts and privileged accounts to the recommended secure defaults.
-|`Not applicable` +
+|`Applicable` +
 
 MuleSoft doesn't provide a built-in capability to compare current settings to recommended secure defaults for admin or privileged accounts in this PaaS model. You can view current roles and permissions in the UI and via the Access Management API. You are responsible for fulfilling the intent (for example, comparing to internal baselines) using exported data or internal processes.
 
 |FRR-RSC-06
 |Export Capability
 |Providers should offer the capability to export all security settings in a machine-readable format.
-|`Partially applicable` +
+|`Applicable` +
 
 MuleSoft provides programmatic access to some security-relevant data via the Access Management API (organizations, business groups, users, roles, permissions) and API Manager (export of API instances). MuleSoft doesn't offer a single machine-readable export of all security settings (identity and access management (IAM), policies, audit config, and so on) in one format. You can use the APIs to export or script identity and access security settings and to build your own export. 
 
@@ -112,9 +112,14 @@ For details, refer to:
 |FRR-RSC-08
 |Machine-Readable Guidance
 |Providers should provide recommended secure configuration guidance in a machine-readable format that can be used by customers or third-party tools to compare against current settings.
-|`Not applicable` +
+|`Applicable` +
 
-MuleSoft does not currently provide a machine-readable secure-configuration baseline (for example, Security Content Automation Protocol (SCAP), Open Vulnerability and Assessment Language (OVAL), or JSON schema) for admin or privileged account settings.
+MuleSoft doesn't provide a machine-readable secure-configuration baseline (for example, Security Content Automation Protocol (SCAP), Open Vulnerability and Assessment Language (OVAL), or JSON schema) for admin or privileged account settings in this PaaS model. MuleSoft provides human-readable guidance in documentation. You can use the Access Management API response formats for your own tooling. You are responsible for fulfilling the intent (for example, comparing to internal baselines) using exported data or internal processes.
+
+For details, refer to: 
+
+* xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud]
+* https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/11270/versions/11646/pages/11244[Access Management API Portal]
 
 |FRR-RSC-09
 |Publish Guidance
