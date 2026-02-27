@@ -28,7 +28,7 @@ Note: This guidance should explain how top-level administrative accounts are nam
 
 |`Applicable` +
 
-MuleSoft fulfills this requirement in this PaaS model. MuleSoft documents how to create accounts, manage access, and use organization-level admin—including the "Organization Administrator" permission, "organization owner," and "Organization Administrators" role, as well as access (sign-in, single sign-on (SSO), multi-factor authentication (MFA)), configuration (users, business groups, roles), operation (managing users, roles, permissions), and decommissioning (deleting accounts, migrating owners). The documentation explicitly names the "Organization Administrators," "organization owner," and "Organization Administrator permission." 
+MuleSoft fulfills this requirement in this PaaS model. MuleSoft documents how to create accounts, manage access, and use organization-level admin—including the "Organization Administrator" permission, "organization owner," and "Organization Administrators" roles, as well as access (sign-in, single sign-on (SSO), multi-factor authentication (MFA)), configuration (users, business groups, roles), operation (managing users, roles, permissions), and decommissioning (deleting accounts, migrating owners). The documentation explicitly names the "Organization Administrators" and "organization owner" roles  and "Organization Administrator" permission.
 
 For details, refer to: 
 
