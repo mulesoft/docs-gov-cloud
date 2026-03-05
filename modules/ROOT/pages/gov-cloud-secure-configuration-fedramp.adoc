@@ -19,7 +19,7 @@ This table lists each FRR-RSC control, how it applies to MuleSoft Government Clo
 |Description
 |MuleSoft Solution
 
-|FRR-RSC-01
+|SCG-CSO-RSC (FRR-RSC-01)
 |Top-Level Administrative Accounts Guidance
 |Providers must create and maintain guidance that includes instructions on how to securely access, configure, operate, and decommission top-level administrative accounts that control enterprise access to the entire cloud service offering.
 
@@ -37,7 +37,7 @@ For details, refer to:
 * xref:access-management::roles.adoc[Using Roles to Manage Permissions]
 * xref:index.adoc[Government Cloud Overview]
 
-|FRR-RSC-02
+|SCG-CSO-RSC (FRR-RSC-02)
 |Administrative Security Settings
 |Providers must create and maintain guidance that explains security-related settings that can be operated only by top-level administrative accounts and their security implications.
 |`Applicable` +
@@ -50,7 +50,7 @@ For details, refer to:
 * xref:access-management::index.adoc[Access Management Overview] (Organization Administrator Configurations)
 * xref:access-management::roles.adoc[Using Roles to Manage Permissions] (Organization Administrators Scope)
 
-|FRR-RSC-03
+|SCG-CSO-RSC (FRR-RSC-03)
 |Privileged Accounts Security
 |Providers should create and maintain guidance that explains security-related settings that can be operated only by privileged accounts and their security implications.
 |`Applicable` +
@@ -62,7 +62,7 @@ For details, refer to:
 * xref:access-management::roles.adoc[Using Roles to Manage Permissions]
 * xref:access-management::managing-permissions.adoc[Managing Permissions]
 
-|FRR-RSC-04
+|SCG-CSO-SDF (FRR-RSC-04)
 |Secure Defaults on Provisioning
 |Providers should set all settings to their recommended secure defaults for top-level administrative accounts and privileged accounts when initially provisioned.
 |`Applicable` +
@@ -77,14 +77,14 @@ For details, refer to:
 * xref:access-management::multi-factor-authentication.adoc[Multi-factor Authentication]
 * xref:access-management::managing-your-account.adoc[Managing your Anypoint Platform Account]
 
-|FRR-RSC-05
+|SCG-ENH-CMP (FRR-RSC-05)
 |Comparison Capability
 |Providers should offer the capability to compare all current settings for top-level administrative accounts and privileged accounts to the recommended secure defaults.
 |`Applicable` +
 
 MuleSoft doesn't provide a built-in capability to compare current settings to recommended secure defaults for admin or privileged accounts in this PaaS model. You can view current roles and permissions in the UI and via the Access Management API. You are responsible for fulfilling the intent (for example, comparing to internal baselines) using exported data or internal processes.
 
-|FRR-RSC-06
+|CSG-ENH-EXP (FRR-RSC-06)
 |Export Capability
 |Providers should offer the capability to export all security settings in a machine-readable format.
 |`Applicable` +
@@ -97,7 +97,7 @@ For details, refer to:
 * https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/11270/versions/11646/pages/11244[Access Management API Portal]
 * xref:api-manager::export-api-latest-task.adoc[Exporting an API Instance]
 
-|FRR-RSC-07
+|SCG-ENH-API (FRR-RSC-07)
 |API Capability
 |Providers should offer the capability to view and adjust security settings via an API or similar capability.
 |`Applicable` +
@@ -109,7 +109,7 @@ For details, refer to:
 * xref:access-management::index.adoc[Access Management Overview]
 * https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/11270/versions/11646/pages/11244[Access Management API Portal]
 
-|FRR-RSC-08
+|SCG-RSC-MRG (FRR-RSC-08)
 |Machine-Readable Guidance
 |Providers should provide recommended secure configuration guidance in a machine-readable format that can be used by customers or third-party tools to compare against current settings.
 |`Applicable` +
@@ -121,7 +121,7 @@ For details, refer to:
 * xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud]
 * https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals/organizations/68ef9520-24e9-4cf2-b2f5-620025690913/apis/11270/versions/11646/pages/11244[Access Management API Portal]
 
-|FRR-RSC-09
+|SCG-CSO-PUB (FRR-RSC-09)
 |Publish Guidance
 |Providers should make recommended secure configuration guidance available publicly.
 |`Applicable` +
@@ -134,7 +134,7 @@ For details, refer to:
 * xref:access-management::index.adoc[Access Management Overview]
 * xref:access-management::roles.adoc[Using Roles to Manage Permissions]
 
-|FRR-RSC-10
+|SCG-ENH-VRH (FRR-RSC-10)
 |Versioning and Release History
 |Providers should provide versioning and a release history for recommended secure default settings for top-level administrative accounts and privileged accounts as they are adjusted over time.
 |`Applicable` +
