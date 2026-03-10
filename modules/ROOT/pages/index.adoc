@@ -129,7 +129,7 @@ include::mq::partial$mq-in-govcloud.adoc[tag=mqSupportInGovCloud]
 
 MuleSoft Government Cloud meets all FedRAMP security and compliance standards, and adheres to these additional security protocols:
 
-* Federal Information Processing Standards (FIPS 140-2)
+* Federal Information Processing Standards (FIPS 140-3), for details refer to xref:mule-runtime::fips-140-3-compliance-support.adoc[FIPS 140-3 Compliance Support].
 * Transport Layer Security (TLS) 1.2 encryption
 * NIST 800-53
 * CIS benchmarks
