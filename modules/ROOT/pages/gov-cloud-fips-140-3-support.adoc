@@ -95,7 +95,9 @@ If you are running Mule in standard (non-FIPS) mode and need to move directly to
 
 === Prerequisites
 
-* Mule runtime engine 4.9, Java 17 or later, and a FIPS license from the license `.zip` file provided by MuleSoft.
+* Mule runtime engine 4.9
+* Java 17 or later
+* A FIPS license from the license `.zip` file provided by MuleSoft.
 
 === Steps
 
