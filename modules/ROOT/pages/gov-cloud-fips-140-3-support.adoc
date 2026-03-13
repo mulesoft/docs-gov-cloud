@@ -23,7 +23,7 @@ FIPS 140-3 support in MuleSoft Government Cloud requires:
 
 * Mule runtime engine 4.9 (Government Cloud supported version)
 * Java 17 or later
-* FIPS license from the license `.zip` file provided by MuleSoft (the non-FIPS license is not valid for FIPS mode)
+* FIPS license from the license `.zip` file provided by MuleSoft (the non-FIPS license isn't valid for FIPS mode)
 
 == Assumptions
 
