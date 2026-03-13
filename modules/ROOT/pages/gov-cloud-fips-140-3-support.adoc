@@ -190,8 +190,7 @@ wrapper.java.additional.<n>=-Dmule.keystore.type=BCFKS
 ----
 wrapper.java.additional.<n>=-Dmule.cluster.network.encryption.key={your-encryption-key}
 ----
-+
-For more information about clustering in FIPS mode, see the Mule runtime documentation on high-availability clusters and FIPS.
+
 +
 . Save your changes and start Mule runtime.
 
