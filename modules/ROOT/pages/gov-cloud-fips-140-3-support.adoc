@@ -91,7 +91,7 @@ FIPS 140-3 requires keystores and truststores in `BCFKS` format. If you are stil
 [[migrate-non-fips-to-fips1403]]
 == Migrating from Non-FIPS to FIPS 140-3
 
-If you are running Mule in standard (non-FIPS) mode and need to move directly to FIPS 140-3, complete the following steps.
+If you are running Mule in standard (non-FIPS) mode and need to move directly to FIPS 140-3, complete these steps.
 
 === Prerequisites
 
