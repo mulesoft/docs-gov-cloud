@@ -48,7 +48,7 @@ FIPS 140-3 uses the `$MULE_HOME/conf/tls-fips140-3.conf` file for TLS cipher con
 * Bouncy Castle version: + 
 Replace the FIPS 140-2 Bouncy Castle provider (typically 1.x FIPS) with Bouncy Castle 2.0.0 FIPS. Install the JARs listed in xref:#set_up_environment[Installing Bouncy Castle Security Provider] and update `java.security` to use `BouncyCastleFipsProvider` and `BouncyCastleJsseProvider` as shown there.
 
-* KeyManagerFactory and TrustManagerFactory: +
+* `KeyManagerFactory` and `TrustManagerFactory`: +
 In `$JAVA_HOME/conf/security/java.security`, set:
 +
 ----
