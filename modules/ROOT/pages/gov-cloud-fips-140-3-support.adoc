@@ -85,7 +85,7 @@ FIPS 140-3 requires keystores and truststores in `BCFKS` format. If you are stil
 
 === Connectors and Post-Migration
 
-* Use only connectors tagged as `fips-140-3-verified` in Anypoint Exchange. Replace or remove connectors that were only verified for FIPS 140-2.
+* Use only connectors tagged as `fips-140-3-verified` in Anypoint Exchange. Replace or remove connectors that are only verified for FIPS 140-2.
 * Restart Mule after all changes and confirm in startup logs that FIPS 140-3 security mode is enabled.
 
 [[migrate-non-fips-to-fips1403]]
