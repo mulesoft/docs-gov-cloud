@@ -1,7 +1,7 @@
 = Government Cloud Overview
 :page-aliases: gov-cloud-features.adoc
 
-MuleSoft Government Cloud is a secure, FedRAMP-moderate certified deployment environment that enables government agencies to use Anypoint Platform in the cloud.
+MuleSoft Government Cloud is a secure, Federal Risk and Authorization Management Program (FedRAMP)-moderate certified deployment environment that enables government agencies to use Anypoint Platform in the cloud.
 
 Your agency might already use Anypoint Platform on-premises to build applications. With Government Cloud, you can leverage the integration platform as a service (iPaaS) to reduce the infrastructure and management costs associated with legacy on-premises integration.
 
@@ -25,7 +25,7 @@ Government Cloud supports the full API-led connectivity methodology and end-to-e
 
 .3+|Platform and Runtime
 |Mule Runtime Engine
-|Supports Mule runtime engine versions 4.3, 4.4, 4.6, and 4.9 on the LTS release channel. The Edge release channel is not supported, as it is not FedRAMP-approved. For more information, visit xref:release-notes::mule-runtime/lts-edge-release-cadence.adoc[].
+|Supports Mule runtime engine versions 4.3, 4.4, 4.6, and 4.9 on the long-term support (LTS) release channel. The Edge release channel is not supported, as it is not FedRAMP-approved. For more information, visit xref:release-notes::mule-runtime/lts-edge-release-cadence.adoc[].
 |Self-signed certificates are not supported. Required Mule agent versions:
 
 * Mule 3: v1.12.0 and later (cloud deployments only)
