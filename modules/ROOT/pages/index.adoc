@@ -151,50 +151,52 @@ The Salesforce menu option in Access Management is not available in Government C
 |Use the Model Context Protocol (MCP) Connector to integrate with the MCP protocol, enabling AI models to interact with external tools and data sources.
 |N/A
 
-|Security and Compliance
-|Security and Compliance Standards
-|MuleSoft Government Cloud meets all FedRAMP security and compliance standards, including:
+|===
+
+== Security and Compliance
+
+MuleSoft Government Cloud meets all FedRAMP security and compliance standards, including:
 
 * Federal Information Processing Standards (FIPS 140-2)
 * Transport Layer Security (TLS) 1.2 encryption
 * National Institute of Standards and Technology (NIST) 800-53
 * Center for Internet Security (CIS) benchmarks
 
-Government Cloud provides a FedRAMP-compliant control plane hosted in the US GovCloud (West) region. For the full support matrix, see xref:general::hosting-home.adoc#support-matrix-control-plane[Support Matrix for Control Plane Hosting Options].
-|For more information, see xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud].
+Government Cloud provides a FedRAMP-compliant control plane hosted in the US GovCloud (West) region. For the full support matrix, see xref:hosting-home::index.adoc#support-matrix-control-plane[Support Matrix for Control Plane Hosting Options].
 
-.8+|Products Not Currently Supported
+For more information, see xref:gov-cloud-security.adoc[Security in MuleSoft Government Cloud].
+
+== Products Not Currently Supported
+
+These Anypoint Platform products aren't currently supported in Government Cloud:
+
+[%header%autowidth.spread,cols="2,3"]
+|===
+|Product |Description
+
 |Anypoint Analytics
 |API analytics and dashboards for monitoring API performance and usage.
-|Not supported.
 
 |Anypoint Code Builder
 |Cloud-based IDE for designing, building, and deploying integrations and APIs.
-|Not supported.
 
 |API Data Gateway
 |Connect Salesforce reports and dashboards to external data sources.
-|Not supported.
 
 |API Governance
 |Automated API conformance and governance validation.
-|Not supported.
 
 |Anypoint Flex Gateway
 |Lightweight, high-performance API gateway deployable across any environment.
-|Not supported.
 
 |Anypoint Runtime Fabric
 |Container-based runtime deployment and management on your infrastructure.
-|Not supported.
 
 |Anypoint Security
 |Edge security policies including tokenization and encryption.
-|Not supported.
 
 |Anypoint Service Mesh
 |Service mesh integration for managing microservices with Anypoint Platform.
-|Not supported.
 
 |===
 
@@ -206,4 +208,4 @@ Government Cloud provides a FedRAMP-compliant control plane hosted in the US Gov
 * xref:gov-cloud-load-balancer.adoc[Dedicated Load Balancer]
 * xref:gov-cloud-anypoint-vpn.adoc[Anypoint VPN Configuration]
 * xref:gov-cloud-standalone.adoc[Standalone Mule Support]
-* xref:release-notes.adoc[Release Notes]
+
