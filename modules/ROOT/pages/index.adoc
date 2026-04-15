@@ -17,113 +17,138 @@ with any and all data and information protection policies, requirements, and sta
 
 MuleSoft Government Cloud includes the full functionality of the Anypoint Platform runtime plane (services and Mule runtime engine) and a subset of the Anypoint Platform control plane (browser-based management of APIs and Mule runtime engine instances) functionality.
 
-Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management. 
+Government Cloud supports the full API-led connectivity methodology and end-to-end API lifecycle management.
 
-[NOTE]
-The feature to xref:api-manager::proxy-latest-concept.adoc[deploy an API proxy] to hybrid targets is not available in Government Cloud.
-
-MuleSoft Government Cloud supports Mule runtime engine 4.3, 4.4, 4.6, and 4.9 with some restrictions:
-
-* Government Cloud supports the Mule runtime engine LTS release channel. The Mule runtime engine Edge release channel is not supported, as it is not FedRAMP-approved. For more information, visit xref:release-notes::mule-runtime/lts-edge-release-cadence.adoc[].
-
-* Because MuleSoft Government Cloud does not support Mule agents with self-signed certificates, specific versions of Mule agents are required:
-
-** Mule 3: v1.12.0 and later (supported only for cloud deployments)
-** Mule 4: v2.2.0 and later
-** Mule 4.6
-
-[NOTE]
-Mule runtime 4.3 has entered https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Agreements/versioning-back-support-policy.pdf[External Support]. 
-
-MuleSoft Government Cloud supports Java 17. For more information on Java support, see xref:general::java-support.adoc[].
-
-Although Anypoint Studio is not part of Government Cloud, you can use Anypoint Studio offline to build applications and then manually deploy them to Government Cloud.
-
-[[design-api-specs]]
-=== Designing API Specifications
-
-[%header%autowidth.spread]
+[%header%autowidth.spread,cols="1,2,3a,2a"]
 |===
-|Feature |Description
-|xref:design-center::design-create-publish-api-specs.adoc[API Designer] a|Use the API Designer web UI to design API specifications in:
+|Category |Feature |Description |Notes
+
+.3+|Platform and Runtime
+|Mule Runtime Engine
+|Supports Mule runtime engine versions 4.3, 4.4, 4.6, and 4.9 on the LTS release channel. The Edge release channel is not supported, as it is not FedRAMP-approved. For more information, visit xref:release-notes::mule-runtime/lts-edge-release-cadence.adoc[].
+|Self-signed certificates are not supported. Required Mule agent versions:
+
+* Mule 3: v1.12.0 and later (cloud deployments only)
+* Mule 4: v2.2.0 and later
+* Mule 4.6
+
+Mule runtime 4.3 has entered https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Agreements/versioning-back-support-policy.pdf[External Support].
+
+|Java
+|Supports Java 17. For more information on Java support, see xref:general::java-support.adoc[].
+|N/A
+
+|Anypoint Studio
+|Use Anypoint Studio offline to build applications and then manually deploy them to Government Cloud.
+|Anypoint Studio is not part of Government Cloud.
+
+.3+|Designing API Specifications
+|xref:design-center::design-create-publish-api-specs.adoc[API Designer]
+|Use the API Designer web UI to design API specifications in:
 
 * RESTful API Modeling Language (RAML) version 0.8 or 1.0
 * OpenAPI Specification (OAS) version 2.0 or 3.0
 * AsyncAPI 2.0
-|xref:design-center::design-create-publish-api-visual-editor.adoc[Visual API Designer] |Use API Designer’s visual API editor to scaffold API specifications in RAML 1.0 or in OAS 2.0 or 3.0 (JSON).
-|xref:design-center::design-create-publish-api-specs#documenting[API Console] |As you add descriptions in your specifications and fragments, you can view them in auto-generated, interactive documentation in the text editor.
-|===
+|N/A
 
-See the xref:design-center::index.adoc[Design Center documentation] for more information.
+|xref:design-center::design-create-publish-api-visual-editor.adoc[Visual API Designer]
+|Use API Designer's visual API editor to scaffold API specifications in RAML 1.0 or in OAS 2.0 or 3.0 (JSON).
+|N/A
 
-[[share-discover-apis]]
-=== Sharing and Discovering APIs 
+|xref:design-center::design-create-publish-api-specs#documenting[API Console]
+|As you add descriptions in your specifications and fragments, you can view them in auto-generated, interactive documentation in the text editor.
+|N/A
 
-[%header%autowidth.spread]
-|===
-|Feature |Description
-|xref:exchange::to-describe-an-asset.adoc[API developer portals] |Publish assets in private Exchange instances and Exchange public portals.
-|xref:exchange::ex2-to-simulate-api-data.adoc[API simulation (mocking service)] |Simulate data for testing OAS or RAML REST APIs.
-|xref:exchange::about-documenting-an-api.adoc[API Notebooks] |Create API Notebooks to describe each function in your API and provide a test area so that users can experiment with sending different values to your API and receiving output.
-|===
+.3+|Sharing and Discovering APIs
+|xref:exchange::to-describe-an-asset.adoc[API Developer Portals]
+|Publish assets in private Exchange instances and Exchange public portals.
+|N/A
 
-See the xref:exchange::index.adoc[Exchange documentation] for more information.
+|xref:exchange::ex2-to-simulate-api-data.adoc[API Simulation (Mocking Service)]
+|Simulate data for testing OAS or RAML REST APIs.
+|N/A
 
-[[build-test-apis]]
-=== Building and Testing APIs
+|xref:exchange::about-documenting-an-api.adoc[API Notebooks]
+|Create API Notebooks to describe each function in your API and provide a test area so that users can experiment with sending different values to your API and receiving output.
+|N/A
 
-[%header%autowidth.spread]
-|===
-|Feature |Description
-|xref:apikit::overview-4.adoc[APIkit] a|Use APIkit to build Mule REST or SOAP APIs in one of the following modeling languages:
+.2+|Building and Testing APIs
+|xref:apikit::overview-4.adoc[APIkit]
+|Use APIkit to build Mule REST or SOAP APIs in one of the following modeling languages:
 
 * RESTful API Modeling Language (RAML) 1.0 and 0.8 versions
-* Web Service Description Language (WSDL) 
-|xref:munit::index.adoc[MUnit] |Use this testing framework to build automated tests for your integrations and APIs.
-|===
+* Web Service Description Language (WSDL)
+|N/A
 
-[[manage-api-communities]]
-=== Managing API Communities
+|xref:munit::index.adoc[MUnit]
+|Use this testing framework to build automated tests for your integrations and APIs.
+|N/A
 
-[%header%autowidth.spread]
-|===
-|Feature |Description
-|xref:api-community-manager::brand-intro.adoc[Brand and Customize Your API Community] |Customize and adjust the exact details of branding, look and feel, and the site structure of your Salesforce Experience Cloud site, using a simple point-and-click approach.
-|xref:api-community-manager::publish-apis.adoc[Publish APIs] |Add and publish APIs, API groups, and minor and major updates from Anypoint Exchange into your Salesforce Experience Cloud site.
-|xref:api-community-manager::publish-content.adoc[Publish Content and CMS Articles] |Create, organize, and publish content for your community, including news, tutorials, developer blog posts, and events.
-|xref:api-community-manager::moderate-forums.adoc[Moderate Forums] |Use the Anypoint API Community Manager forums to ask questions and collaborate with other members of the community.
-|xref:api-community-manager::client-apps-contracts.adoc[Manage Client Applications and Contracts] |Enable your consumer developers to request access to APIs and API Groups in your community and to manage their client applications and contracts.
-|===
+.5+|Managing API Communities
+|xref:api-community-manager::brand-intro.adoc[Brand and Customize Your API Community]
+|Customize and adjust the exact details of branding, look and feel, and the site structure of your Salesforce Experience Cloud site, using a simple point-and-click approach.
+|N/A
 
-See the xref:api-community-manager::index.adoc[Community Manager documentation] for more information.
+|xref:api-community-manager::publish-apis.adoc[Publish APIs]
+|Add and publish APIs, API groups, and minor and major updates from Anypoint Exchange into your Salesforce Experience Cloud site.
+|N/A
 
-[[manage-anypoint-platform]]
-=== Managing Anypoint Platform 
+|xref:api-community-manager::publish-content.adoc[Publish Content and CMS Articles]
+|Create, organize, and publish content for your community, including news, tutorials, developer blog posts, and events.
+|N/A
 
-[%header%autowidth.spread,cols="2,2a"]
-|===
-|Feature |Description
-|xref:access-management::index.adoc[Anypoint Access Management] a|Create Anypoint Platform accounts, configure external identity, and configure access and permissions.
+|xref:api-community-manager::moderate-forums.adoc[Moderate Forums]
+|Use the Anypoint API Community Manager forums to ask questions and collaborate with other members of the community.
+|N/A
 
-[NOTE]
-include::access-management::partial$include-gov-cloud-note.adoc[tag=govcloud]
-[NOTE]
+|xref:api-community-manager::client-apps-contracts.adoc[Manage Client Applications and Contracts]
+|Enable your consumer developers to request access to APIs and API Groups in your community and to manage their client applications and contracts.
+|N/A
+
+.8+|Managing Anypoint Platform
+|xref:access-management::index.adoc[Anypoint Access Management]
+|Create Anypoint Platform accounts, configure external identity, and configure access and permissions.
+|include::access-management::partial$include-gov-cloud-note.adoc[tag=govcloud]
+
 The Salesforce menu option in Access Management is not available in Government Cloud.
 
-|xref:mq::index.adoc[Anypoint MQ] | Send messages between different applications or components within an application.
+|xref:mq::index.adoc[Anypoint MQ]
+|Send messages between different applications or components within an application.
+|include::mq::partial$mq-in-govcloud.adoc[tag=mqSupportInGovCloud]
 
-[NOTE]
-include::mq::partial$mq-in-govcloud.adoc[tag=mqSupportInGovCloud]
+|xref:object-store::index.adoc[Object Store]
+|Share data and state across Mule runtime workers within a single application.
+|N/A
 
-|xref:object-store::index.adoc[Object Store] |Share data and state across Mule runtime workers within a single application.
-|xref:api-manager::latest-overview-concept.adoc[API Manager] |Manage, govern, and secure the APIs you deploy to Anypoint Platform.
-|xref:runtime-manager::index.adoc[Runtime Manager]|Deploy, manage, and monitor your Mule applications in a sandbox, staging, or production environment from one central location, whether your apps are deployed in the cloud or on-premises.
-|xref:runtime-manager::cloudhub.adoc[CloudHub] |Deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on-premises applications with cloud services, and much more.
-|xref:monitoring::index.adoc[Anypoint Monitoring] |Aggregate and map metrics across systems, and configure dashboards and alerts.
-|xref:visualizer::index.adoc[Anypoint Visualizer] |Explore your application network for architectural review, troubleshooting, and policy compliance.
+|xref:api-manager::latest-overview-concept.adoc[API Manager]
+|Manage, govern, and secure the APIs you deploy to Anypoint Platform.
+|The feature to xref:api-manager::proxy-latest-concept.adoc[deploy an API proxy] to hybrid targets is not available in Government Cloud.
+
+|xref:runtime-manager::index.adoc[Runtime Manager]
+|Deploy, manage, and monitor your Mule applications in a sandbox, staging, or production environment from one central location, whether your apps are deployed in the cloud or on-premises.
+|N/A
+
+|xref:runtime-manager::cloudhub.adoc[CloudHub]
+|Deploy sophisticated cross-cloud integration applications in the cloud, create new APIs on top of existing data sources, integrate on-premises applications with cloud services, and much more.
+|N/A
+
+|xref:monitoring::index.adoc[Anypoint Monitoring]
+|Aggregate and map metrics across systems, and configure dashboards and alerts.
+|N/A
+
+|xref:visualizer::index.adoc[Anypoint Visualizer]
+|Explore your application network for architectural review, troubleshooting, and policy compliance.
+|N/A
+
+.2+|AI and Agent Connectivity
+|xref:a2a-connector::index.adoc[A2A Connector]
+|Use the Agent-to-Agent (A2A) Connector to integrate with the A2A protocol, enabling communication between AI agents across platforms and frameworks.
+|N/A
+
+|xref:mcp-connector::index.adoc[MCP Connector]
+|Use the Model Context Protocol (MCP) Connector to integrate with the MCP protocol, enabling AI models to interact with external tools and data sources.
+|N/A
 |===
-
-
 
 == Security in MuleSoft Government Cloud
 
