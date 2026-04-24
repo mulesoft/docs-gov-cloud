@@ -142,13 +142,33 @@ The Salesforce menu option in Access Management is not available in Government C
 |Explore your application network for architectural review, troubleshooting, and policy compliance.
 |N/A
 
-.2+|AI and Agent Connectivity
+.7+|AI and Agent Connectivity
 |xref:a2a-connector::index.adoc[A2A Connector]
 |Use the Agent-to-Agent (A2A) Connector to integrate with the A2A protocol, enabling communication between AI agents across platforms and frameworks.
 |N/A
 
+|xref:agentforce-connector::index.adoc[Agentforce Connector]
+|Integrate with AI agents running in Salesforce's Agentforce platform to orchestrate experiences for customers, partners, and employees.
+|N/A
+
+|xref:einstein-ai-connector::index.adoc[Einstein AI Connector]
+|Connect to large language models (LLMs) via the Salesforce Einstein Trust Layer for AI-powered experiences, including embeddings generation for RAG-based architectures.
+|N/A
+
 |xref:mcp-connector::index.adoc[MCP Connector]
 |Use the Model Context Protocol (MCP) Connector to integrate with the MCP protocol, enabling AI models to interact with external tools and data sources.
+|N/A
+
+|xref:mulesoft-ai-chain-connector::index.adoc[MuleSoft AI Chain Connector]
+|Design, build, and manage AI agents with support for LLMs, vector stores, and advanced AI services including chat, RAG, sentiment analysis, and image generation.
+|N/A
+
+|xref:mulesoft-inference-connector::index.adoc[MuleSoft Inference Connector]
+|Access inference offerings for LLMs from multiple providers, enabling integration of AI capabilities such as chat, text generation, image analysis, and toxicity detection.
+|N/A
+
+|xref:mulesoft-vectors-connector::index.adoc[MuleSoft Vectors Connector]
+|Access external vector stores and databases for semantic search and Retrieval Augmented Generation (RAG) use cases.
 |N/A
 
 |===
