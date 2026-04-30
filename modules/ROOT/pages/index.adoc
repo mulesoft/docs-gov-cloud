@@ -206,7 +206,7 @@ These Anypoint Platform products aren't currently supported in Government Cloud:
 |API Governance
 |Automated API conformance and governance validation.
 
-|Anypoint Flex Gateway
+|Anypoint Omni Gateway
 |Lightweight, high-performance API gateway deployable across any environment.
 
 |Anypoint Runtime Fabric
