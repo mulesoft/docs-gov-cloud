@@ -50,7 +50,6 @@ Government Cloud also supports deploying standalone Mule runtime engine instance
 
 * RESTful API Modeling Language (RAML) version 0.8 or 1.0
 * OpenAPI Specification (OAS) version 2.0 or 3.0
-* AsyncAPI 2.0
 |N/A
 
 |xref:design-center::design-create-publish-api-visual-editor.adoc[Visual API Designer]
