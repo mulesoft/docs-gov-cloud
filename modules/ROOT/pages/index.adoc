@@ -214,8 +214,6 @@ These Anypoint Platform products aren't currently supported in Government Cloud:
 |Anypoint Security
 |Edge security policies including tokenization and encryption.
 
-|Anypoint Service Mesh
-|Service mesh integration for managing microservices with Anypoint Platform.
 
 |===
 
@@ -227,4 +225,3 @@ These Anypoint Platform products aren't currently supported in Government Cloud:
 * xref:gov-cloud-load-balancer.adoc[Dedicated Load Balancer]
 * xref:gov-cloud-anypoint-vpn.adoc[Anypoint VPN Configuration]
 * xref:gov-cloud-standalone.adoc[Standalone Mule Support]
-
