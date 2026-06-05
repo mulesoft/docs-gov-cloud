@@ -28,7 +28,6 @@ Government Cloud supports the full API-led connectivity methodology and end-to-e
 |Supports Mule runtime engine versions 4.3, 4.4, 4.6, and 4.9 on the long-term support (LTS) release channel. The Edge release channel is not supported, as it is not FedRAMP-approved. For more information, visit xref:release-notes::mule-runtime/lts-edge-release-cadence.adoc[].
 |Self-signed certificates are not supported. Required Mule agent versions:
 
-* Mule 3: v1.12.0 and later (cloud deployments only)
 * Mule 4: v2.2.0 and later
 * Mule 4.6
 
