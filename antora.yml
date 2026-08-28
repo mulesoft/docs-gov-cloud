@@ -1,5 +1,5 @@
 name: gov-cloud
-title: Government Cloud
+title: MuleSoft Government Cloud
 version: ~
 nav:
 - modules/ROOT/nav.adoc
