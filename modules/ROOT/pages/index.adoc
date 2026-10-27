@@ -3,6 +3,8 @@
 
 MuleSoft Government Cloud is a secure, Federal Risk and Authorization Management Program (FedRAMP)-moderate certified deployment environment that enables government agencies to use Anypoint Platform in the cloud.
 
+MuleSoft Government Cloud and xref:govcloud-plus::index.adoc[MuleSoft Government Cloud Plus] are distinct cloud platforms with different authorization boundaries, infrastructure, and feature sets. To learn more about MuleSoft Government Cloud Plus, contact your account team. For Salesforce Government Cloud Plus, see https://help.salesforce.com/s/articleView?id=ind.government_cloud_overview.htm&type=5[Government Cloud Overview] in Salesforce Help.
+
 Your agency might already use Anypoint Platform on-premises to build applications. With Government Cloud, you can leverage the integration platform as a service (iPaaS) to reduce the infrastructure and management costs associated with legacy on-premises integration.
 
 With MuleSoft managing the Anypoint Platform infrastructure, your IT teams can focus on designing integrations. You can manage and monitor all government integration assets from a single secure, cloud-based management console.
