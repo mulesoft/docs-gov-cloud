@@ -46,9 +46,9 @@ Complies with hardware and software encryption standards for all data at rest (s
 FIPS 140-3 is supported in Government Cloud. Configure Mule runtime engine for FIPS 140-3 as described in xref:gov-cloud-fips-140-3-support.adoc[FIPS 140-3 Compliance Support]. For FIPS 140-2, see xref:mule-runtime::fips-140-2-compliance-support.adoc[FIPS 140-2 Compliance Support].
 
 
-* *Transport Layer Security (TLS) 1.2 encryption*
+* *Transport Layer Security (TLS) encryption*
 +
-Implements encryption for all external and internal data transmission to block “man in the middle” attacks.
+Implements TLS 1.2 and TLS 1.3 encryption for external and internal data transmission to block “man in the middle” attacks.
 
 * *NIST 800-53*
 +
