@@ -6,10 +6,10 @@ endif::[]
 
 Configure Mule runtime engine (Mule) to run in a Federal Information Processing Standard (FIPS) 140-3 certified environment in MuleSoft Government Cloud.
 
-Where the application runs determines what you configure:
+Where the application runs determines what you configure.
 
 * <<cloudhub-fips1403,CloudHub>>. Government Cloud provides the runtime. Select an image whose name includes `-fips1403`.
-* <<hybrid-standalone-fips1403,Hybrid Standalone>>. You configure the runtime on a host you manage.
+* <<hybrid-standalone-fips1403,Hybrid Standalone>>. Configure the runtime on a host that you manage.
 
 If you configure the runtime yourself, Mule doesn't run in FIPS security mode by default. You must:
 
@@ -24,41 +24,41 @@ Follow the migration path that matches your scenario:
 [[cloudhub-fips1403]]
 == CloudHub
 
-Government Cloud hosts the runtime for applications you deploy to CloudHub. Select a FIPS 140-3 runtime image. Don't install BC-FJA or edit `wrapper.conf` for these applications. Those steps apply when you manage the runtime yourself.
+Government Cloud hosts the runtime for applications that you deploy to CloudHub. Select a FIPS 140-3 runtime image. Install BC-FJA and edit `wrapper.conf` only when you manage the runtime.
 
-=== Select a FIPS 140-3 runtime
+=== Select a FIPS 140-3 Runtime
 
 Deploy or update the application on a Mule 4.9 image whose name includes the `-fips1403` suffix.
 
-The xref:release-notes::cloudhub/cloudhub-runtimes-release-notes.adoc[CloudHub Runtime Release Notes] list the current image for each patch.
+See the xref:release-notes::cloudhub/cloudhub-runtimes-release-notes.adoc[CloudHub Runtime Release Notes] for the current image for each patch.
 
-=== Confirm FIPS 140-3 is active
+=== Confirm FIPS 140-3 Is Active
 
-In Runtime Manager, open the application and select the *Runtime* tab. The *Runtime version* field includes the `-fips1403` suffix when the application runs on a FIPS 140-3 runtime. For example, `4.9.21:5-fips1403` identifies a FIPS 140-3 runtime.
+In Runtime Manager, open the application and select the *Runtime* tab. *Runtime version* includes the `-fips1403` suffix when the application runs on a FIPS 140-3 runtime. For example, `4.9.21:5-fips1403` identifies a FIPS 140-3 runtime.
 
-=== Prepare the application
+=== Prepare the Application
 
-Complete these checks before you move an application to a `-fips1403` runtime:
+To prepare an application for a `-fips1403` runtime, complete these checks:
 
 * Update MuleSoft connectors, modules, and extensions to versions that support the FIPS 140-3 runtime. In Anypoint Exchange, use assets tagged `fips-140-3-verified`.
-* Review custom and partner-built connectors and modules. They must use FIPS-approved cryptography.
+* Use FIPS-approved cryptography in custom and partner-built connectors and modules.
 
-=== TLS protocol support
+=== TLS Protocol Support
 
-TLS 1.2 and TLS 1.3 are configured in the CloudHub Amazon Machine Image (AMI). You can't configure a CloudHub application to use TLS 1.3 only.
+CloudHub sets TLS 1.2 and TLS 1.3 in the Amazon Machine Image. A CloudHub application uses both protocols.
 
 For application TLS contexts, see xref:mule-runtime::tls-configuration.adoc[Configure TLS in Mule].
 
 [[hybrid-standalone-fips1403]]
 == Hybrid Standalone
 
-You install and configure Hybrid Standalone runtimes, including standalone Mule instances you manage from Government Cloud. You choose when to move these runtimes to FIPS 140-3.
+Install and configure Hybrid Standalone runtimes, including standalone Mule instances that you manage from Government Cloud. Move these runtimes to FIPS 140-3 on your schedule.
 
-Use the requirements in <<compatibility,Compatibility>> and the configuration sections on this page: the Bouncy Castle provider, the `wrapper.conf` properties, `BCFKS` keystores, and `$MULE_HOME/conf/tls-fips140-3.conf`.
+Meet the requirements in <<compatibility,Compatibility>>. Configure the BC-FJA provider, the `wrapper.conf` properties, the `BCFKS` keystores, and `$MULE_HOME/conf/tls-fips140-3.conf`.
 
-To change the TLS protocols or cipher suites the runtime offers, edit `$MULE_HOME/conf/tls-fips140-3.conf`. Keep the cipher suites listed in <<fips-140-3-compliant-cipher-suites>>.
+To change the TLS protocols or cipher suites, edit `$MULE_HOME/conf/tls-fips140-3.conf`. Use the cipher suites in <<fips-140-3-compliant-cipher-suites>>.
 
-On ARM64 (AArch64), register the `SUN` provider as described in <<set_up_environment>>. Without it, the JVM fails during startup.
+On ARM64 (AArch64), register the `SUN` provider. See <<set_up_environment>>. The JVM fails during startup if `SUN` isn't registered.
 
 
 [[compatibility]]
@@ -74,7 +74,7 @@ FIPS 140-3 support in MuleSoft Government Cloud requires:
 
 This document assumes you are familiar with https://csrc.nist.gov/publications/detail/fips/140/3/final[FIPS 140-3], the US government security standard that requires compliant parties to use only cryptographic algorithms and techniques certified by NIST.
 
-These instructions use BC-FJA 2.1.2, the recommended FIPS 140-3 certified security provider for Mule runtime. If you use a different https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules[certified security provider], refer to that provider's documentation for configuration instructions.
+These instructions use BC-FJA 2.1.2, the recommended FIPS 140-3 certified security provider for Mule runtime. If you use a different https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules[certified security provider], see that provider's documentation for configuration instructions.
 
 [[migrate-fips1402-to-fips1403]]
 == Migrating from FIPS 140-2 to FIPS 140-3
@@ -147,7 +147,7 @@ If you are running Mule in standard (non-FIPS) mode and need to move directly to
 === Steps
 
 . Install the FIPS 140-3 certified cryptography provider: +
-  Follow xref:#set_up_environment[Installing BC-FJA Security Provider] to install BC-FJA 2.1.2 and configure `java.security` (providers and `ssl.KeyManagerFactory.algorithm` / `ssl.TrustManagerFactory.algorithm`).
+  To install BC-FJA 2.1.2 and configure `java.security` (providers and `ssl.KeyManagerFactory.algorithm` / `ssl.TrustManagerFactory.algorithm`), see xref:#set_up_environment[Installing BC-FJA Security Provider].
 
 . Configure Mule for FIPS 140-3 mode: +
   In `$MULE_HOME/conf/wrapper.conf`, add the properties described in xref:#running-mule-in-fips-security-mode[Running Mule in FIPS Security Mode] (`mule.security.model=fips140-3`, `org.bouncycastle.fips.approved_only=true`, and the `--add-opens` option). For Mule 4.9, set the keystore type explicitly:
@@ -178,7 +178,7 @@ Mule runtime uses BC-FJA 2.1.2 as its FIPS 140-3 certified cryptography provider
 
 === Installation Steps
 
-These instructions show how to install and configure the BC-FJA security provider with Java 17 or later.
+Install and configure BC-FJA with Java 17 or later.
 
 . Verify that you are using Java 17 or later and `JAVA_HOME` is set.
 . Download the BC-FJA 2.1.2 provider files from https://www.bouncycastle.org/fips-java/[the Bouncy Castle website].
@@ -201,7 +201,7 @@ security.provider.3=SUN
 +
 [NOTE]
 ====
-On ARM64 (AArch64), keep `SUN` as `security.provider.3`. The FIPS provider doesn't supply the `SecureRandom` algorithms the JVM expects on that architecture (`NativePRNGBlocking:SUN` and `DRBG:SUN`). Without `SUN`, the JVM fails during startup, before Mule writes logs. This limitation applies to Government Cloud FIPS 140-3 runtimes. The same note is in xref:mule-runtime::fips-140-3-compliance-support.adoc[FIPS 140-3 Compliance Support] for Mule runtime.
+On ARM64 (AArch64), keep `SUN` as `security.provider.3`. The FIPS provider doesn't supply the `SecureRandom` algorithms that the JVM expects on that architecture (`NativePRNGBlocking:SUN` and `DRBG:SUN`). The JVM fails during startup, before Mule writes logs, if `SUN` isn't registered. This limitation applies to Government Cloud FIPS 140-3 runtimes. See the same note in xref:mule-runtime::fips-140-3-compliance-support.adoc[FIPS 140-3 Compliance Support].
 ====
 +
 . Configure the key manager and trust manager algorithms in the same `java.security` file:
