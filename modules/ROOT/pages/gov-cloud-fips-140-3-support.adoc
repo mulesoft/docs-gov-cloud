@@ -10,7 +10,6 @@ Where the application runs determines what you configure:
 
 * <<cloudhub-fips1403,CloudHub>>. Government Cloud provides the runtime. Select an image whose name includes `-fips1403`.
 * <<hybrid-standalone-fips1403,Hybrid Standalone>>. You configure the runtime on a host you manage.
-* xref:govcloud-plus::index.adoc[MuleSoft Government Cloud Plus]. Runtimes, Omni Gateway, and connectors provided on Government Cloud Plus are FIPS 140-3 compliant.
 
 If you configure the runtime yourself, Mule doesn't run in FIPS security mode by default. You must:
 
