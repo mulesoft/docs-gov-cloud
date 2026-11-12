@@ -8,8 +8,8 @@ Configure Mule runtime engine (Mule) to run in a Federal Information Processing 
 
 Where the application runs determines what you configure.
 
-* <<cloudhub-fips1403,CloudHub>>. Government Cloud provides the runtime. Select an image whose name includes `-fips1403`.
-* <<hybrid-standalone-fips1403,Hybrid Standalone>>. Configure the runtime on a host that you manage.
+* <<cloudhub-fips1403,Configure FIPS 140-3 for CloudHub>>. Government Cloud provides the runtime. Select an image whose name includes `-fips1403`.
+* <<hybrid-standalone-fips1403,Configure FIPS 140-3 for Hybrid Standalone and On-Premises>>. Configure the runtime on a host that you manage.
 
 If you configure the runtime yourself, Mule doesn't run in FIPS security mode by default. You must:
 
@@ -22,7 +22,7 @@ Follow the migration path that matches your scenario:
 * <<migrate-non-fips-to-fips1403,Migrating Mule from Non-FIPS to FIPS 140-3>>
 
 [[cloudhub-fips1403]]
-== CloudHub
+== Configure FIPS 140-3 for CloudHub
 
 Government Cloud hosts the runtime for applications that you deploy to CloudHub. Select a FIPS 140-3 runtime image. Install BC-FJA and edit `wrapper.conf` only when you manage the runtime.
 
@@ -50,9 +50,9 @@ CloudHub sets TLS 1.2 and TLS 1.3 in the Amazon Machine Image. A CloudHub applic
 For application TLS contexts, see xref:mule-runtime::tls-configuration.adoc[Configure TLS in Mule].
 
 [[hybrid-standalone-fips1403]]
-== Hybrid Standalone
+== Configure FIPS 140-3 for Hybrid Standalone and On-Premises
 
-Install and configure Hybrid Standalone runtimes, including standalone Mule instances that you manage from Government Cloud. Move these runtimes to FIPS 140-3 on your schedule.
+Use these steps for Hybrid Standalone and for on-premises Mule runtimes that you manage from Government Cloud. The configuration is the same. Move these runtimes to FIPS 140-3 on your schedule.
 
 Meet the requirements in <<compatibility,Compatibility>>. Configure the BC-FJA provider, the `wrapper.conf` properties, the `BCFKS` keystores, and `$MULE_HOME/conf/tls-fips140-3.conf`.
 
