@@ -11,8 +11,6 @@ Where the application runs determines what you configure.
 * <<cloudhub-fips1403,CloudHub>>. Government Cloud provides the runtime. Select an image whose name includes `-fips1403`.
 * <<hybrid-standalone-fips1403,Hybrid Standalone>>. Configure the runtime on a host that you manage.
 
-This FIPS 140-3 guidance doesn't apply to CloudHub 2.0 or Anypoint Runtime Fabric. MuleSoft Government Cloud supports the CloudHub and Hybrid Standalone deployment models described on this page.
-
 If you configure the runtime yourself, Mule doesn't run in FIPS security mode by default. You must:
 
 * Install a certified cryptography module in your Java environment.
