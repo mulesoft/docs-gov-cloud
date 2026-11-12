@@ -6,7 +6,13 @@ endif::[]
 
 Configure Mule runtime engine (Mule) to run in a Federal Information Processing Standard (FIPS) 140-3 certified environment in MuleSoft Government Cloud.
 
-Mule doesn't run in FIPS security mode by default. To enable it, you must:
+Where the application runs determines what you configure:
+
+* <<cloudhub-fips1403,CloudHub>>. Government Cloud provides the runtime. Select an image whose name includes `-fips1403`.
+* <<hybrid-standalone-fips1403,Hybrid Standalone>>. You configure the runtime on a host you manage.
+* xref:govcloud-plus::index.adoc[MuleSoft Government Cloud Plus]. Runtimes, Omni Gateway, and connectors provided on Government Cloud Plus are FIPS 140-3 compliant.
+
+If you configure the runtime yourself, Mule doesn't run in FIPS security mode by default. You must:
 
 * Install a certified cryptography module in your Java environment.
 * Adjust Mule runtime settings to run in FIPS security mode.
@@ -16,7 +22,61 @@ Follow the migration path that matches your scenario:
 * <<migrate-fips1402-to-fips1403,Migrating Mule from FIPS 140-2 to FIPS 140-3>>
 * <<migrate-non-fips-to-fips1403,Migrating Mule from Non-FIPS to FIPS 140-3>>
 
+[[cloudhub-fips1403]]
+== CloudHub
 
+Government Cloud hosts the runtime for applications you deploy to CloudHub. Select a FIPS 140-3 runtime image. Don't install Bouncy Castle or edit `wrapper.conf` for these applications. Those steps apply when you manage the runtime yourself.
+
+=== Select a FIPS 140-3 runtime
+
+Deploy or update the application on a Mule 4.9 image whose name includes the `-fips1403` suffix.
+
+The xref:release-notes::cloudhub/cloudhub-runtimes-release-notes.adoc[CloudHub Runtime Release Notes] list the current image for each patch. FIPS 140-3 images for Government Cloud start at Mule 4.9.18 (`4.9.18:1-fips1403`).
+
+=== Confirm FIPS 140-3 is active
+
+FIPS 140-3 is active when the application runs on an image whose name includes `fips1403`. The runtime version in the UI includes that suffix, and the audit log entry includes `fips-1403`.
+
+=== Prepare the application
+
+Complete these checks before you move an application to a `-fips1403` runtime. The checks apply in production and in sandbox, including applications in a shared VPC or an Anypoint VPC. Salesforce Help publishes the full checklist in https://help.salesforce.com/s/articleView?id=005316656&type=1[FIPS 140-3 Compliant Mule Runtimes in GovCloud].
+
+* Update MuleSoft connectors, modules, and extensions to versions that support the FIPS 140-3 runtime. In Anypoint Exchange, use assets tagged `fips-140-3-verified`.
+* Convert application keystores and truststores from `JKS` or `PKCS12` to `BCFKS`, unless the application is already FIPS 140-2 compliant.
+* Review custom and partner-built connectors and modules. They must use FIPS-approved cryptography.
+* Build these applications with Anypoint Studio 7.25.0 or later.
+
+=== Enforcement schedule
+
+Move CloudHub applications to a Mule 4.9 `-fips1403` runtime. In August 2027, MuleSoft autopatch applications hosted in Government Cloud onto a FIPS 140-3 runtime. Sandbox environments are patched before production. An application that isn't compatible with that runtime can encounter errors after the autopatch.
+
+MuleSoft doesn't autopatch Hybrid Standalone runtimes.
+
+=== TLS on Government Cloud endpoints
+
+MuleSoft is updating TLS policies on Government Cloud service endpoints to FIPS 140-3. This change applies to every Government Cloud customer, including applications that still run on a runtime without the `-fips1403` suffix.
+
+TLS 1.2 and TLS 1.3 stay supported. The platform drops `TLS_CHACHA20_POLY1305_SHA256` because that cipher isn't FIPS 140-3 approved. AES-GCM cipher suites stay available, including `TLS_AES_128_GCM_SHA256` and `TLS_AES_256_GCM_SHA384`.
+
+Update a client only when that client uses `TLS_CHACHA20_POLY1305_SHA256` as its only cipher. Don't add extra cipher suites or protocol restrictions on the runtime unless the integration requires them. For application TLS contexts, see xref:mule-runtime::tls-configuration.adoc[Configure TLS in Mule].
+
+=== Log forwarding
+
+CloudHub in Government Cloud continues to forward logs with Filebeat on FIPS 140-3 runtimes. OpenTelemetry isn't used for this log forwarding.
+
+[[hybrid-standalone-fips1403]]
+== Hybrid Standalone
+
+You install and configure Hybrid Standalone runtimes, including standalone Mule instances you manage from Government Cloud. MuleSoft doesn't autopatch these runtimes. You choose when they move to FIPS 140-3.
+
+Use the requirements in <<compatibility,Compatibility>> and the configuration sections on this page: the Bouncy Castle provider, the `wrapper.conf` properties, `BCFKS` keystores, and `$MULE_HOME/conf/tls-fips140-3.conf`.
+
+To change the TLS protocols or cipher suites the runtime offers, edit `$MULE_HOME/conf/tls-fips140-3.conf`. Keep the cipher suites listed in <<fips-140-3-compliant-cipher-suites>>.
+
+On ARM64 (AArch64), register the `SUN` provider as described in <<set_up_environment>>. Without it, the JVM fails during startup.
+
+
+[[compatibility]]
 == Compatibility
 
 FIPS 140-3 support in MuleSoft Government Cloud requires:
@@ -155,6 +215,11 @@ security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider
 security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS
 security.provider.3=SUN
 ----
++
+[NOTE]
+====
+On ARM64 (AArch64), keep `SUN` as `security.provider.3`. The FIPS provider doesn't supply the `SecureRandom` algorithms the JVM expects on that architecture (`NativePRNGBlocking:SUN` and `DRBG:SUN`). Without `SUN`, the JVM fails during startup, before Mule writes logs. This limitation applies to Government Cloud FIPS 140-3 runtimes. The same note is in xref:mule-runtime::fips-140-3-compliance-support.adoc[FIPS 140-3 Compliance Support] for Mule runtime.
+====
 +
 . Configure the key manager and trust manager algorithms in the same `java.security` file:
 +
