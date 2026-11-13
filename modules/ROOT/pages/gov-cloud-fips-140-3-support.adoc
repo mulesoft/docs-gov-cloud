@@ -96,7 +96,7 @@ For application TLS contexts, see xref:mule-runtime::tls-configuration.adoc[Conf
 [[hybrid-standalone-fips1403]]
 == Configure FIPS 140-3 for Hybrid Standalone and On-Premises
 
-You deploy the application from the Government Cloud control plane. A host that you manage runs the Mule runtime for Hybrid Standalone and on-premises deployments. Configure the host for FIPS 140-3 on your schedule.
+You deploy the application from the Government Cloud control plane. A host that you manage runs Mule runtime for Hybrid Standalone and on-premises deployments. Configure the host for FIPS 140-3 on your schedule.
 
 Use a FIPS license from the license `.zip` file provided by MuleSoft. The non-FIPS license isn't valid for FIPS mode.
 
