@@ -55,7 +55,7 @@ CloudHub enables the set in the runtime image. On a host that you manage, the se
 [[cloudhub-fips1403]]
 == Configure FIPS 140-3 for CloudHub
 
-You deploy the application from the Government Cloud control plane. CloudHub runs the Mule runtime. Select a FIPS 140-3 runtime image.
+You deploy the application from the Government Cloud control plane. CloudHub runs Mule runtime. Select a FIPS 140-3 runtime image.
 
 === Prepare the Application
 
