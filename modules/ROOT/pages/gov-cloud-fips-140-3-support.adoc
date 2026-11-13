@@ -71,6 +71,18 @@ Deploy or update the application on a Mule runtime engine 4.9.17 or later image 
 
 See the xref:release-notes::cloudhub/cloudhub-runtimes-release-notes.adoc[CloudHub Runtime Release Notes] for the current image for each patch.
 
+=== Deploy with the Mule Maven Plugin
+
+Set `muleVersion` to `4.9-java17-fips1403` in the `cloudHubDeployment` configuration in `pom.xml`. CloudHub selects the latest patch for that runtime when you deploy.
+
+----
+<cloudHubDeployment>
+  <muleVersion>4.9-java17-fips1403</muleVersion>
+</cloudHubDeployment>
+----
+
+See xref:mule-runtime::deploy-to-cloudhub.adoc[Deploy Applications to CloudHub Using the Mule Maven Plugin] for the rest of the deployment configuration.
+
 === Confirm FIPS 140-3 Is Active
 
 In Runtime Manager, open the application and select the *Runtime* tab. *Runtime version* includes the `-fips1403` suffix when the application runs on a FIPS 140-3 runtime. For example, `4.9.21:5-fips1403` identifies a FIPS 140-3 runtime.
