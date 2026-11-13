@@ -34,11 +34,9 @@ on-premises environment and manage them using the MuleSoft Government Cloud cont
 
 Government Cloud supports these standalone Mule versions:
 
-* 4.1.x
-* 4.2.x
-* 4.3.x
 * 4.6.x
 * 4.9.x
+* 4.13.x
 
 FIPS 140-3 standalone runtimes use 4.9.17 or later. Earlier versions in this list don't meet the FIPS 140-3 runtime requirement.
 
