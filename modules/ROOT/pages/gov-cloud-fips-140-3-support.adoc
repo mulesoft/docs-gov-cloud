@@ -121,7 +121,7 @@ Install BC-FJA. Add the `wrapper.conf` properties. Convert keystores to `BCFKS` 
 [[set_up_environment]]
 === Install BC-FJA
 
-The procedure uses BC-FJA 2.1.2. If you use a different https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules[certified security provider], see that provider's documentation for configuration instructions.
+This procedure uses BC-FJA 2.1.2. If you use a different https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules[certified security provider], see that provider's documentation for configuration instructions.
 
 Install and configure BC-FJA with Java 17 or later.
 
