@@ -67,7 +67,7 @@ Before you deploy to a `-fips1403` runtime:
 
 === Select a FIPS 140-3 Runtime
 
-Deploy or update the application on a Mule runtime engine 4.9.17 or later image whose name includes the `-fips1403` suffix.
+Deploy or update the application on Mule runtime engine 4.9.17 or later image whose name includes the `-fips1403` suffix.
 
 See the xref:release-notes::cloudhub/cloudhub-runtimes-release-notes.adoc[CloudHub Runtime Release Notes] for the current image for each patch.
 
